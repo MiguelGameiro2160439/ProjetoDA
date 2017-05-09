@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a190becef0d344cf8a7fa7c847f3b806" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.Referee" Width="1.5" PointX="0.5" PointY="0.625" />
+        <EntityTypeShape EntityType="Model1.User" Width="1.5" PointX="2.75" PointY="0.625" />
+        <EntityTypeShape EntityType="Model1.Administrator" Width="1.5" PointX="5" PointY="0.625" />
+        <EntityTypeShape EntityType="Model1.Card" Width="1.5" PointX="6.875" PointY="0.875" />
+        <EntityTypeShape EntityType="Model1.Tournament" Width="1.5" PointX="9.75" PointY="0.625" />
+        <EntityTypeShape EntityType="Model1.Game" Width="1.5" PointX="0.625" PointY="2.875" />
+        <EntityTypeShape EntityType="Model1.Deck" Width="1.5" PointX="4.125" PointY="3.25" />
+        <EntityTypeShape EntityType="Model1.TeamTournament" Width="1.5" PointX="7.625" PointY="4" />
+        <EntityTypeShape EntityType="Model1.StandardTournament" Width="1.5" PointX="10.875" PointY="4.375" />
+        <EntityTypeShape EntityType="Model1.StandardGame" Width="1.5" PointX="0.625" PointY="9.25" />
+        <EntityTypeShape EntityType="Model1.TeamGame" Width="1.5" PointX="3.5" PointY="6.5" />
+        <EntityTypeShape EntityType="Model1.Team" Width="1.5" PointX="7.5" PointY="6.5" />
+        <EntityTypeShape EntityType="Model1.Player" Width="1.5" PointX="10.75" PointY="6.75" />
+        <InheritanceConnector EntityType="Model1.Referee" />
+        <InheritanceConnector EntityType="Model1.Administrator" />
+        <InheritanceConnector EntityType="Model1.TeamTournament" />
+        <InheritanceConnector EntityType="Model1.StandardTournament" />
+        <AssociationConnector Association="Model1.RefereeGame" />
+        <AssociationConnector Association="Model1.GameDeck" />
+        <AssociationConnector Association="Model1.GameDeck2" />
+        <AssociationConnector Association="Model1.DeckCard" />
+        <InheritanceConnector EntityType="Model1.StandardGame" />
+        <InheritanceConnector EntityType="Model1.TeamGame" />
+        <AssociationConnector Association="Model1.TeamGameTeamTournament" />
+        <AssociationConnector Association="Model1.TeamGame_Team1" />
+        <AssociationConnector Association="Model1.TeamGame_Team2" />
+        <AssociationConnector Association="Model1.TeamTeamTournament" />
+        <AssociationConnector Association="Model1.TeamPlayer" />
+        <AssociationConnector Association="Model1.PlayerStandard_Tournament" />
+        <AssociationConnector Association="Model1.StandardGamePlayer" />
+        <AssociationConnector Association="Model1.StandardGamePlayer1" />
+        <AssociationConnector Association="Model1.StandardGameStandardTournament" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
