@@ -37,6 +37,14 @@ namespace ProjetoDA
             mcontainer.CardSet.Add(newCard);
             mcontainer.SaveChanges();
 
+            Player newPlayer = new Player();
+            newPlayer.Name = "Alexandre";
+            newPlayer.Email = "alexandrep97@hotmail.com";
+            newPlayer.Nickname = "Alexp23";
+            newPlayer.Age = 19;
+
+            mcontainer.PlayerSet.Add(newPlayer);
+            mcontainer.SaveChanges();
         }
     }
 }
