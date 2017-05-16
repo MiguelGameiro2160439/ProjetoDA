@@ -32,6 +32,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>ProjetoDA.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
@@ -72,8 +81,32 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCartas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCartas.Designer.cs">
+      <DependentUpon>FormCartas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAdministrador.Designer.cs">
+      <DependentUpon>LoginAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginArbitro.Designer.cs">
+      <DependentUpon>LoginArbitro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuLogin.Designer.cs">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -104,6 +137,12 @@
     <Compile Include="StandardTournament.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="TabelaCartas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabelaCartas.Designer.cs">
+      <DependentUpon>TabelaCartas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Team.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -119,8 +158,26 @@
     <Compile Include="User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="VistaAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaAdmin.Designer.cs">
+      <DependentUpon>VistaAdmin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCartas.resx">
+      <DependentUpon>FormCartas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAdministrador.resx">
+      <DependentUpon>LoginAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginArbitro.resx">
+      <DependentUpon>LoginArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuLogin.resx">
+      <DependentUpon>MenuLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -131,6 +188,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TabelaCartas.resx">
+      <DependentUpon>TabelaCartas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaAdmin.resx">
+      <DependentUpon>VistaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
