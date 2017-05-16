@@ -33,10 +33,54 @@ namespace ProjetoDA
             newCard.RuleText = "dxbsjkhakjsehgdkjhfgjkfsgkjghsfg";
             newCard.Attack = 30;
             newCard.Defense = 20;
-        
-            mcontainer.CardSet.Add(newCard);
-            mcontainer.SaveChanges();
 
+            
+
+            Player newPlayer = new Player();
+            newPlayer.Name = "Alexandre";
+            newPlayer.Email = "alexandrep97@hotmail.com";
+            newPlayer.Nickname = "Alexp23";
+            newPlayer.Age = 19;
+            newPlayer.Avatar = "jafuoaef";
+
+            Team newTeam = new Team();
+            newTeam.Name = "Benfica";
+            newTeam.Avatar = "hshshsbwkaj";
+
+            Deck newDeck = new Deck();
+            newDeck.Name = "Ofenciva";
+
+            Tournament newTournament = new Tournament();
+            newTournament.Name = "Colombus";
+            newTournament.Date = new DateTime(2017, 05, 16);
+            newTournament.Description = "Torneio mundial";
+            
+            User newUser = new User();
+            newUser.Username = "Alexp23";
+            newUser.Password = "12345";
+
+            Referee newReferee = new Referee();
+            newReferee.Name = "Alex";
+            newReferee.Avatar = "ahjdya";
+
+            
+
+            /*Game newGame = new Game();
+            newGame.RefereeId = 
+            newGame.DeckOneId = newDeck.Id;
+            newGame.DeckTwoId = newDeck.Id;
+            newGame.Description = "Final";
+            newGame.Date = new DateTime(2017, 05, 16);
+            newGame.Number = 1;
+
+            mcontainer.GameSet.Add(newGame);*/
+            mcontainer.UserSet.Add(newUser);
+            mcontainer.TournamentSet.Add(newTournament);
+            mcontainer.DeckSet.Add(newDeck);
+            mcontainer.TeamSet.Add(newTeam);
+            mcontainer.CardSet.Add(newCard);
+            mcontainer.PlayerSet.Add(newPlayer);
+            mcontainer.SaveChanges();
         }
     }
 }
