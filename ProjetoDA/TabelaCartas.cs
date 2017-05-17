@@ -12,9 +12,38 @@ namespace ProjetoDA
 {
     public partial class TabelaCartas : Form
     {
+        private string ficheiro;
+        private Model1Container container;
+
         public TabelaCartas()
         {
             InitializeComponent();
+            container = new Model1Container();
+            ficheiro = null;
+        }
+
+        private void buttonAdicionarCarta_Click(object sender, EventArgs e)
+        {
+            FormCartas form = new FormCartas();
+            DialogResult resultado = form.ShowDialog();
+
+            if (resultado == DialogResult.OK)
+            {
+                AdicionarCarta(form.NovaCarta);
+            }
+        }
+
+        private void AdicionarCarta(TabelaCartas carta)
+        {
+            container.Card.Add(carta);
+            container.SaveChanges();
+            refreshListaCards();
+        }
+
+       private void refreshListaCards()
+        {
+            listBoxCartas.Items.Clear();
+            listBoxCartas.Items.AddRange(container.Card.ToArray());
         }
     }
 }
