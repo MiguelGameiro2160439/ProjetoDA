@@ -29,15 +29,11 @@
         private void InitializeComponent()
         {
             this.textBoxNome = new System.Windows.Forms.TextBox();
-            this.textBoxLealdade = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
-            this.textBoxAtaque = new System.Windows.Forms.TextBox();
-            this.textBoxCusto = new System.Windows.Forms.TextBox();
             this.textBoxRegras = new System.Windows.Forms.TextBox();
-            this.textBoxDefesa = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,6 +41,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBoxTipo = new System.Windows.Forms.ComboBox();
             this.comboBoxFacao = new System.Windows.Forms.ComboBox();
+            this.textBoxCusto = new System.Windows.Forms.TextBox();
+            this.numericUpDownLealdade = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownDefesa = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownAtaque = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLealdade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDefesa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAtaque)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxNome
@@ -53,13 +56,6 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(100, 20);
             this.textBoxNome.TabIndex = 0;
-            // 
-            // textBoxLealdade
-            // 
-            this.textBoxLealdade.Location = new System.Drawing.Point(290, 40);
-            this.textBoxLealdade.Name = "textBoxLealdade";
-            this.textBoxLealdade.Size = new System.Drawing.Size(100, 20);
-            this.textBoxLealdade.TabIndex = 2;
             // 
             // label1
             // 
@@ -96,20 +92,7 @@
             this.buttonOK.TabIndex = 6;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
-            // 
-            // textBoxAtaque
-            // 
-            this.textBoxAtaque.Location = new System.Drawing.Point(291, 66);
-            this.textBoxAtaque.Name = "textBoxAtaque";
-            this.textBoxAtaque.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAtaque.TabIndex = 7;
-            // 
-            // textBoxCusto
-            // 
-            this.textBoxCusto.Location = new System.Drawing.Point(290, 14);
-            this.textBoxCusto.Name = "textBoxCusto";
-            this.textBoxCusto.Size = new System.Drawing.Size(100, 20);
-            this.textBoxCusto.TabIndex = 8;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // textBoxRegras
             // 
@@ -118,13 +101,6 @@
             this.textBoxRegras.Name = "textBoxRegras";
             this.textBoxRegras.Size = new System.Drawing.Size(429, 87);
             this.textBoxRegras.TabIndex = 9;
-            // 
-            // textBoxDefesa
-            // 
-            this.textBoxDefesa.Location = new System.Drawing.Point(66, 96);
-            this.textBoxDefesa.Name = "textBoxDefesa";
-            this.textBoxDefesa.Size = new System.Drawing.Size(100, 20);
-            this.textBoxDefesa.TabIndex = 11;
             // 
             // label4
             // 
@@ -197,11 +173,42 @@
             this.comboBoxFacao.Size = new System.Drawing.Size(100, 21);
             this.comboBoxFacao.TabIndex = 18;
             // 
+            // textBoxCusto
+            // 
+            this.textBoxCusto.Location = new System.Drawing.Point(290, 14);
+            this.textBoxCusto.Name = "textBoxCusto";
+            this.textBoxCusto.Size = new System.Drawing.Size(100, 20);
+            this.textBoxCusto.TabIndex = 8;
+            // 
+            // numericUpDownLealdade
+            // 
+            this.numericUpDownLealdade.Location = new System.Drawing.Point(290, 40);
+            this.numericUpDownLealdade.Name = "numericUpDownLealdade";
+            this.numericUpDownLealdade.Size = new System.Drawing.Size(64, 20);
+            this.numericUpDownLealdade.TabIndex = 19;
+            // 
+            // numericUpDownDefesa
+            // 
+            this.numericUpDownDefesa.Location = new System.Drawing.Point(66, 97);
+            this.numericUpDownDefesa.Name = "numericUpDownDefesa";
+            this.numericUpDownDefesa.Size = new System.Drawing.Size(100, 20);
+            this.numericUpDownDefesa.TabIndex = 20;
+            // 
+            // numericUpDownAtaque
+            // 
+            this.numericUpDownAtaque.Location = new System.Drawing.Point(290, 66);
+            this.numericUpDownAtaque.Name = "numericUpDownAtaque";
+            this.numericUpDownAtaque.Size = new System.Drawing.Size(70, 20);
+            this.numericUpDownAtaque.TabIndex = 21;
+            // 
             // FormCartas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 278);
+            this.Controls.Add(this.numericUpDownAtaque);
+            this.Controls.Add(this.numericUpDownDefesa);
+            this.Controls.Add(this.numericUpDownLealdade);
             this.Controls.Add(this.comboBoxFacao);
             this.Controls.Add(this.comboBoxTipo);
             this.Controls.Add(this.label8);
@@ -209,18 +216,18 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBoxDefesa);
             this.Controls.Add(this.textBoxRegras);
             this.Controls.Add(this.textBoxCusto);
-            this.Controls.Add(this.textBoxAtaque);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxLealdade);
             this.Controls.Add(this.textBoxNome);
             this.Name = "FormCartas";
             this.Text = "FormCartas";
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLealdade)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDefesa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAtaque)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,15 +236,11 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBoxNome;
-        private System.Windows.Forms.TextBox textBoxLealdade;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button buttonOK;
-        private System.Windows.Forms.TextBox textBoxAtaque;
-        private System.Windows.Forms.TextBox textBoxCusto;
         private System.Windows.Forms.TextBox textBoxRegras;
-        private System.Windows.Forms.TextBox textBoxDefesa;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -245,5 +248,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBoxTipo;
         private System.Windows.Forms.ComboBox comboBoxFacao;
+        private System.Windows.Forms.TextBox textBoxCusto;
+        private System.Windows.Forms.NumericUpDown numericUpDownLealdade;
+        private System.Windows.Forms.NumericUpDown numericUpDownDefesa;
+        private System.Windows.Forms.NumericUpDown numericUpDownAtaque;
     }
 }

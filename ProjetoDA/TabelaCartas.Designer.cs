@@ -48,7 +48,7 @@
             this.buttonAdicionarCarta.Name = "buttonAdicionarCarta";
             this.buttonAdicionarCarta.Size = new System.Drawing.Size(75, 23);
             this.buttonAdicionarCarta.TabIndex = 1;
-            this.buttonAdicionarCarta.Text = "Adicionar";
+            this.buttonAdicionarCarta.Text = "Inserir";
             this.buttonAdicionarCarta.UseVisualStyleBackColor = true;
             this.buttonAdicionarCarta.Click += new System.EventHandler(this.buttonAdicionarCarta_Click);
             // 
@@ -58,7 +58,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
+            this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -67,7 +67,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
+            this.button3.Text = "Remover";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // TabelaCartas

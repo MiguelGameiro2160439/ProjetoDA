@@ -123,6 +123,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Partial Classes\Carta.cs" />
     <Compile Include="Player.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

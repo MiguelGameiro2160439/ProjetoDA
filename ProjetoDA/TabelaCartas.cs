@@ -20,6 +20,8 @@ namespace ProjetoDA
             InitializeComponent();
             container = new Model1Container();
             ficheiro = null;
+
+            refreshListaCards();
         }
 
         private void buttonAdicionarCarta_Click(object sender, EventArgs e)
@@ -33,9 +35,9 @@ namespace ProjetoDA
             }
         }
 
-        private void AdicionarCarta(TabelaCartas carta)
+        private void AdicionarCarta(Card carta)
         {
-            container.Card.Add(carta);
+            container.CardSet.Add(carta);
             container.SaveChanges();
             refreshListaCards();
         }
@@ -43,7 +45,7 @@ namespace ProjetoDA
        private void refreshListaCards()
         {
             listBoxCartas.Items.Clear();
-            listBoxCartas.Items.AddRange(container.Card.ToArray());
+            listBoxCartas.Items.AddRange(container.CardSet.ToArray());
         }
     }
 }
