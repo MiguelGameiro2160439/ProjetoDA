@@ -34,29 +34,34 @@
             // 
             // buttonAdministrador
             // 
-            this.buttonAdministrador.Location = new System.Drawing.Point(95, 57);
+            this.buttonAdministrador.Location = new System.Drawing.Point(127, 70);
+            this.buttonAdministrador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdministrador.Name = "buttonAdministrador";
-            this.buttonAdministrador.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdministrador.Size = new System.Drawing.Size(119, 44);
             this.buttonAdministrador.TabIndex = 0;
             this.buttonAdministrador.Text = "Administrador";
             this.buttonAdministrador.UseVisualStyleBackColor = true;
+            this.buttonAdministrador.Click += new System.EventHandler(this.buttonAdministrador_Click);
             // 
             // buttonArbitro
             // 
-            this.buttonArbitro.Location = new System.Drawing.Point(95, 124);
+            this.buttonArbitro.Location = new System.Drawing.Point(127, 153);
+            this.buttonArbitro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonArbitro.Name = "buttonArbitro";
-            this.buttonArbitro.Size = new System.Drawing.Size(75, 23);
+            this.buttonArbitro.Size = new System.Drawing.Size(119, 47);
             this.buttonArbitro.TabIndex = 1;
             this.buttonArbitro.Text = "Arbitro";
             this.buttonArbitro.UseVisualStyleBackColor = true;
+            this.buttonArbitro.Click += new System.EventHandler(this.buttonArbitro_Click);
             // 
             // MenuLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(379, 321);
             this.Controls.Add(this.buttonArbitro);
             this.Controls.Add(this.buttonAdministrador);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuLogin";
             this.Text = "MenuLogin";
             this.ResumeLayout(false);

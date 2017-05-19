@@ -165,6 +165,12 @@
     <Compile Include="VistaAdmin.Designer.cs">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="VistaArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaArbitro.Designer.cs">
+      <DependentUpon>VistaArbitro.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VistaAdmin.resx">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaArbitro.resx">
+      <DependentUpon>VistaArbitro.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

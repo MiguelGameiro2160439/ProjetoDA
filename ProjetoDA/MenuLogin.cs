@@ -16,5 +16,18 @@ namespace ProjetoDA
         {
             InitializeComponent();
         }
+
+        private void buttonAdministrador_Click(object sender, EventArgs e)
+        {
+            LoginAdministrador newform = new LoginAdministrador();
+            newform.ShowDialog();
+
+        }
+
+        private void buttonArbitro_Click(object sender, EventArgs e)
+        {
+            LoginArbitro newform = new LoginArbitro();
+            newform.ShowDialog();
+        }
     }
 }
