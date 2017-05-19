@@ -62,8 +62,15 @@ namespace ProjetoDA
             Referee newReferee = new Referee();
             newReferee.Name = "Alex";
             newReferee.Avatar = "ahjdya";
+            newReferee.Password = "12345";
+            newReferee.Username = "Alexp23";
 
-            
+            Administrator newAdmin = new Administrator();
+            newAdmin.Username = "Pedro";
+            newAdmin.Password = "12345";
+            newAdmin.Email = "asdfghjk";
+
+
 
             /*Game newGame = new Game();
             newGame.RefereeId = 
@@ -74,6 +81,8 @@ namespace ProjetoDA
             newGame.Number = 1;
 
             mcontainer.GameSet.Add(newGame);*/
+            mcontainer.UserSet.Add(newAdmin);
+            mcontainer.UserSet.Add(newReferee);
             mcontainer.UserSet.Add(newUser);
             mcontainer.TournamentSet.Add(newTournament);
             mcontainer.DeckSet.Add(newDeck);
