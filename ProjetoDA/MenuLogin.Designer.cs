@@ -36,7 +36,7 @@
             // 
             this.buttonAdministrador.Location = new System.Drawing.Point(95, 57);
             this.buttonAdministrador.Name = "buttonAdministrador";
-            this.buttonAdministrador.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdministrador.Size = new System.Drawing.Size(85, 23);
             this.buttonAdministrador.TabIndex = 0;
             this.buttonAdministrador.Text = "Administrador";
             this.buttonAdministrador.UseVisualStyleBackColor = true;
