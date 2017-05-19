@@ -91,5 +91,6 @@ namespace ProjetoDA
             mcontainer.PlayerSet.Add(newPlayer);
             mcontainer.SaveChanges();
         }
+
     }
 }

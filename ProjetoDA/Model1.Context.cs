@@ -25,12 +25,12 @@ namespace ProjetoDA
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<User> UserSet { get; set; }
-        public virtual DbSet<Card> CardSet { get; set; }
-        public virtual DbSet<Tournament> TournamentSet { get; set; }
-        public virtual DbSet<Game> GameSet { get; set; }
-        public virtual DbSet<Deck> DeckSet { get; set; }
-        public virtual DbSet<Team> TeamSet { get; set; }
-        public virtual DbSet<Player> PlayerSet { get; set; }
+        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Card> Card { get; set; }
+        public virtual DbSet<Tournament> Tournament { get; set; }
+        public virtual DbSet<Game> Game { get; set; }
+        public virtual DbSet<Deck> Deck { get; set; }
+        public virtual DbSet<Team> Team { get; set; }
+        public virtual DbSet<Player> Player { get; set; }
     }
 }

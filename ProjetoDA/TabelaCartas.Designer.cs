@@ -50,6 +50,7 @@
             this.buttonAdicionarCarta.TabIndex = 1;
             this.buttonAdicionarCarta.Text = "Adicionar";
             this.buttonAdicionarCarta.UseVisualStyleBackColor = true;
+            this.buttonAdicionarCarta.Click += new System.EventHandler(this.buttonAdicionarCarta_Click);
             // 
             // button2
             // 
