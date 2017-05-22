@@ -14,10 +14,12 @@ namespace ProjetoDA
     {
         private string ficheiro;
         private Model1Container container;
+        private Card cartaSelecionada;
 
         public TabelaCartas()
         {
             InitializeComponent();
+
             container = new Model1Container();
             ficheiro = null;
 
@@ -42,10 +44,58 @@ namespace ProjetoDA
             refreshListaCards();
         }
 
-       private void refreshListaCards()
+        private void refreshListaCards()
         {
             listBoxCartas.Items.Clear();
             listBoxCartas.Items.AddRange(container.CardSet.ToArray());
         }
+
+        private void buttonRemover_Click(object sender, EventArgs e)
+        {
+            cartaSelecionada = (Card)listBoxCartas.SelectedItem;
+
+            container.CardSet.Remove(cartaSelecionada);
+
+            container.SaveChanges();
+
+            listBoxCartas.Items.Clear();
+            listBoxCartas.Items.AddRange(container.CardSet.ToArray());
+        }
+
+        private void listBoxCartas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cartaSelecionada = (Card)listBoxCartas.SelectedItem;
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            cartaSelecionada = (Card)listBoxCartas.SelectedItem;
+
+            if (cartaSelecionada != null)
+            {
+                //remover
+                cartaSelecionada = (Card)listBoxCartas.SelectedItem;
+
+                container.CardSet.Remove(cartaSelecionada);
+
+                container.SaveChanges();
+
+                
+                listBoxCartas.Items.AddRange(container.CardSet.ToArray());
+
+                //insere
+                 FormCartas form = new FormCartas();
+                 DialogResult resultado = form.ShowDialog();
+
+                if (resultado == DialogResult.OK)
+                {
+                    AdicionarCarta(form.NovaCarta);
+                }
+             
+            }
+              
+            
+        }
+    
     }
 }

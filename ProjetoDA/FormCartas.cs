@@ -25,12 +25,12 @@ namespace ProjetoDA
         {
             NovaCarta = new Card();
 
-            NovaCarta.Name = textBoxNome.Text;
+            NovaCarta.Name = textBoxNome.Text.Trim();
             NovaCarta.Faction = comboBoxFacao.SelectedItem.ToString();
             NovaCarta.Type = comboBoxTipo.SelectedItem.ToString();
-            NovaCarta.Cost = textBoxCusto.Text;
+            NovaCarta.Cost = textBoxCusto.Text.Trim();
             NovaCarta.Loyalty = (int)numericUpDownLealdade.Value;
-            NovaCarta.RuleText = textBoxRegras.Text;
+            NovaCarta.RuleText = textBoxRegras.Text.Trim();
             NovaCarta.Attack = (int)numericUpDownAtaque.Value;
             NovaCarta.Defense = (int)numericUpDownDefesa.Value;
 

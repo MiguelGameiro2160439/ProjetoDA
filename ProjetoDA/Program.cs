@@ -16,7 +16,7 @@ namespace ProjetoDA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TabelaCartas());
+            Application.Run(new TabelaBaralho());
         }
     }
 }
