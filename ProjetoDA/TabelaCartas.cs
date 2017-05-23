@@ -96,6 +96,10 @@ namespace ProjetoDA
               
             
         }
-    
+
+        private void TabelaCartas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

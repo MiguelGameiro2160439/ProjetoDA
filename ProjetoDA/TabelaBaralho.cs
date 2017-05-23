@@ -30,6 +30,7 @@ namespace ProjetoDA
             NovoBaralho.Name = textBoxNome.Text.Trim();
 
             container.DeckSet.Add(NovoBaralho);
+            container.SaveChanges();
             refreshListaBaralho();
         }
 

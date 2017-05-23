@@ -84,6 +84,7 @@
             this.Controls.Add(this.listBoxCartas);
             this.Name = "TabelaCartas";
             this.Text = "TabelaCartas";
+            this.Load += new System.EventHandler(this.TabelaCartas_Load);
             this.ResumeLayout(false);
 
         }
