@@ -37,6 +37,8 @@ namespace ProjetoDA
             try
             {
                 Referee userSelecionado = utilizadores.First<Referee>();
+                VistaArbitro newVista = new VistaArbitro();
+                newVista.ShowDialog();
             }
             catch (Exception)
             {

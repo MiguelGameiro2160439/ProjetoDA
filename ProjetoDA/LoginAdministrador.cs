@@ -36,6 +36,8 @@ namespace ProjetoDA
             try
             {
                 Administrator userSelecionado = utilizadores.First<Administrator>();
+                VistaAdmin newVista = new VistaAdmin();
+                newVista.ShowDialog();
             }
             catch (Exception)
             {
