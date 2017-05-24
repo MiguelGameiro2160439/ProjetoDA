@@ -19,7 +19,14 @@ namespace ProjetoDA
 
         private void buttonAdmin_Click(object sender, EventArgs e)
         {
-            
+            EditAdmin newEdit = new EditAdmin();
+            newEdit.ShowDialog();
+        }
+
+        private void buttonArbitro_Click(object sender, EventArgs e)
+        {
+            EditArbitro newEdit = new EditArbitro();
+            newEdit.ShowDialog();
         }
     }
 }

@@ -50,6 +50,7 @@
             this.buttonArbitro.TabIndex = 1;
             this.buttonArbitro.Text = "Arbitro";
             this.buttonArbitro.UseVisualStyleBackColor = true;
+            this.buttonArbitro.Click += new System.EventHandler(this.buttonArbitro_Click);
             // 
             // EditUtilizadores
             // 

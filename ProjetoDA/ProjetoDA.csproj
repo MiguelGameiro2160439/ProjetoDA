@@ -53,6 +53,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -69,18 +70,6 @@
     <Compile Include="Administrator.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Admin\EditAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\EditAdmin.Designer.cs">
-      <DependentUpon>EditAdmin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\EditArbitro.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\EditArbitro.Designer.cs">
-      <DependentUpon>EditArbitro.cs</DependentUpon>
-    </Compile>
     <Compile Include="Card.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -92,6 +81,18 @@
     </Compile>
     <Compile Include="Admin\EditUtilizadores.Designer.cs">
       <DependentUpon>EditUtilizadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdmin.Designer.cs">
+      <DependentUpon>EditAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditArbitro.Designer.cs">
+      <DependentUpon>EditArbitro.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
