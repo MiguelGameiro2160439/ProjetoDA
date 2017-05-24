@@ -173,11 +173,12 @@
             this.inserirEditarRemoverUtilizadorToolStripMenuItem.Name = "inserirEditarRemoverUtilizadorToolStripMenuItem";
             this.inserirEditarRemoverUtilizadorToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.inserirEditarRemoverUtilizadorToolStripMenuItem.Text = "Inserir/Editar/Remover";
+            this.inserirEditarRemoverUtilizadorToolStripMenuItem.Click += new System.EventHandler(this.inserirEditarRemoverUtilizadorToolStripMenuItem_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(17, 304);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(341, 22);
             this.textBox1.TabIndex = 1;
@@ -185,7 +186,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(380, 302);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 28);
             this.button1.TabIndex = 2;
@@ -197,7 +198,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(17, 34);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(545, 260);
             this.listBox1.TabIndex = 3;
@@ -211,7 +212,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VistaAdmin";
             this.Text = "VistaAdmin";
             this.menuStrip1.ResumeLayout(false);

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoDA
+namespace ProjetoDA.Admin
 {
-    public partial class VistaAdmin : Form
+    public partial class EditAdmin : Form
     {
-        public VistaAdmin()
+        public EditAdmin()
         {
             InitializeComponent();
         }

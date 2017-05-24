@@ -69,11 +69,29 @@
     <Compile Include="Administrator.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Admin\EditAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditAdmin.Designer.cs">
+      <DependentUpon>EditAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditArbitro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditArbitro.Designer.cs">
+      <DependentUpon>EditArbitro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Card.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Deck.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditUtilizadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditUtilizadores.Designer.cs">
+      <DependentUpon>EditUtilizadores.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -96,22 +114,22 @@
     <Compile Include="Game.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="LoginAdministrador.cs">
+    <Compile Include="Login\LoginAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginAdministrador.Designer.cs">
+    <Compile Include="Login\LoginAdministrador.Designer.cs">
       <DependentUpon>LoginAdministrador.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginArbitro.cs">
+    <Compile Include="Login\LoginArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginArbitro.Designer.cs">
+    <Compile Include="Login\LoginArbitro.Designer.cs">
       <DependentUpon>LoginArbitro.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuLogin.cs">
+    <Compile Include="Login\MenuLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuLogin.Designer.cs">
+    <Compile Include="Login\MenuLogin.Designer.cs">
       <DependentUpon>MenuLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
@@ -172,10 +190,10 @@
     <Compile Include="User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="VistaAdmin.cs">
+    <Compile Include="Admin\VistaAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VistaAdmin.Designer.cs">
+    <Compile Include="Admin\VistaAdmin.Designer.cs">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="VistaArbitro.cs">
@@ -184,6 +202,15 @@
     <Compile Include="VistaArbitro.Designer.cs">
       <DependentUpon>VistaArbitro.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\EditAdmin.resx">
+      <DependentUpon>EditAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EditArbitro.resx">
+      <DependentUpon>EditArbitro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\EditUtilizadores.resx">
+      <DependentUpon>EditUtilizadores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,13 +220,13 @@
     <EmbeddedResource Include="FormCartas.resx">
       <DependentUpon>FormCartas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginAdministrador.resx">
+    <EmbeddedResource Include="Login\LoginAdministrador.resx">
       <DependentUpon>LoginAdministrador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginArbitro.resx">
+    <EmbeddedResource Include="Login\LoginArbitro.resx">
       <DependentUpon>LoginArbitro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuLogin.resx">
+    <EmbeddedResource Include="Login\MenuLogin.resx">
       <DependentUpon>MenuLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -217,7 +244,7 @@
     <EmbeddedResource Include="TabelaCartas.resx">
       <DependentUpon>TabelaCartas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VistaAdmin.resx">
+    <EmbeddedResource Include="Admin\VistaAdmin.resx">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaArbitro.resx">
