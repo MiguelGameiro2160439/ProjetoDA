@@ -38,5 +38,10 @@ namespace ProjetoDA
             listBoxAdmins.Items.Clear();
             //listBoxAdmins.Items.AddRange(mcontainer.UserSet.ToArray());
         }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

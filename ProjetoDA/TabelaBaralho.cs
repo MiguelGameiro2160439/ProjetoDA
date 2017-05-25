@@ -89,5 +89,10 @@ namespace ProjetoDA
 
             }
         }
+
+        public List<Deck> ListaBaralho()
+        {
+            return container.DeckSet.ToList();
+        }
     }
 }
