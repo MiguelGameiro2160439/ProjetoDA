@@ -14,6 +14,7 @@ namespace ProjetoDA
     {
 
         Model1Container mcontainer;
+        private Administrator adminSelected;
 
         public EditAdmin()
         {
@@ -23,25 +24,65 @@ namespace ProjetoDA
 
         private void buttonNovo_Click(object sender, EventArgs e)
         {
-            Administrator newAdmin = new Administrator();
-            newAdmin.Username = textBoxUsername.Text;
-            newAdmin.Password = textBoxPassword.Text;
-            newAdmin.Email = textBoxEmail.Text;
+            if (adminSelected == null)
+            {
+                Administrator newAdmin = new Administrator();
+                newAdmin.Username = textBoxUsername.Text;
+                newAdmin.Password = textBoxPassword.Text;
+                newAdmin.Email = textBoxEmail.Text;
 
-            mcontainer.UserSet.Add(newAdmin);
-            mcontainer.SaveChanges();
-            atualizarLista();
+                mcontainer.UserSet.Add(newAdmin);
+                mcontainer.SaveChanges();
+                atualizarLista();
+                limparCampos();
+            }
+            else
+            {
+                adminSelected.Username = textBoxUsername.Text;
+                adminSelected.Password = textBoxPassword.Text;
+                adminSelected.Email = textBoxEmail.Text;
+
+                mcontainer.UserSet.Add(adminSelected);
+                mcontainer.SaveChanges();
+                atualizarLista();
+                limparCampos();
+            }
         }
 
         private void atualizarLista()
         {
             listBoxAdmins.Items.Clear();
-            //listBoxAdmins.Items.AddRange(mcontainer.UserSet.ToArray());
+            listBoxAdmins.Items.AddRange(mcontainer.UserSet.ToArray());
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
+            if (listBoxAdmins.SelectedIndex >= 0)
+            {
+                adminSelected = (Administrator)listBoxAdmins.SelectedItem;
+                mcontainer.UserSet.Remove(adminSelected);
+                limparCampos();
+                atualizarLista();
+            }
+        }
 
+        private void limparCampos()
+        {
+            adminSelected = null;
+            textBoxEmail.Text = "";
+            textBoxUsername.Text = "";
+            textBoxPassword.Text = "";
+        }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (listBoxAdmins.SelectedIndex >= 0)
+            {
+                adminSelected = (Administrator)listBoxAdmins.SelectedItem;
+                textBoxEmail.Text = adminSelected.Email;
+                textBoxUsername.Text = adminSelected.Username;
+                textBoxPassword.Text = adminSelected.Password;
+            }
         }
     }
 }

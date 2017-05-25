@@ -80,6 +80,7 @@
             this.inserirEditarRemoverJogadorToolStripMenuItem.Name = "inserirEditarRemoverJogadorToolStripMenuItem";
             this.inserirEditarRemoverJogadorToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.inserirEditarRemoverJogadorToolStripMenuItem.Text = "Inserir/Editar/Remover";
+            this.inserirEditarRemoverJogadorToolStripMenuItem.Click += new System.EventHandler(this.inserirEditarRemoverJogadorToolStripMenuItem_Click);
             // 
             // torneiosToolStripMenuItem
             // 
