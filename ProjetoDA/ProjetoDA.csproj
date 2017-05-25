@@ -106,23 +106,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBaralho.cs">
+    <Compile Include="Formularios\FormBaralho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBaralho.Designer.cs">
+    <Compile Include="Formularios\FormBaralho.Designer.cs">
       <DependentUpon>FormBaralho.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCartas.cs">
+    <Compile Include="Formularios\FormCartas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCartas.Designer.cs">
+    <Compile Include="Formularios\FormCartas.Designer.cs">
       <DependentUpon>FormCartas.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormJogos.cs">
+    <Compile Include="Partial Classes\FormJogos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormJogos.Designer.cs">
+    <Compile Include="Partial Classes\FormJogos.Designer.cs">
       <DependentUpon>FormJogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormTorneios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormTorneios.Designer.cs">
+      <DependentUpon>FormTorneios.cs</DependentUpon>
     </Compile>
     <Compile Include="Game.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -176,23 +182,29 @@
     <Compile Include="StandardTournament.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="TabelaBaralho.cs">
+    <Compile Include="Tabelas\TabelaBaralho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TabelaBaralho.Designer.cs">
+    <Compile Include="Tabelas\TabelaBaralho.Designer.cs">
       <DependentUpon>TabelaBaralho.cs</DependentUpon>
     </Compile>
-    <Compile Include="TabelaCartas.cs">
+    <Compile Include="Tabelas\TabelaCartas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TabelaCartas.Designer.cs">
+    <Compile Include="Tabelas\TabelaCartas.Designer.cs">
       <DependentUpon>TabelaCartas.cs</DependentUpon>
     </Compile>
-    <Compile Include="TabelaJogos.cs">
+    <Compile Include="Tabelas\TabelaJogos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TabelaJogos.Designer.cs">
+    <Compile Include="Tabelas\TabelaJogos.Designer.cs">
       <DependentUpon>TabelaJogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tabelas\TabelaTorneios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabelas\TabelaTorneios.Designer.cs">
+      <DependentUpon>TabelaTorneios.cs</DependentUpon>
     </Compile>
     <Compile Include="Team.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -236,13 +248,16 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBaralho.resx">
+    <EmbeddedResource Include="Formularios\FormBaralho.resx">
       <DependentUpon>FormBaralho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCartas.resx">
+    <EmbeddedResource Include="Formularios\FormCartas.resx">
       <DependentUpon>FormCartas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormJogos.resx">
+    <EmbeddedResource Include="Formularios\FormTorneios.resx">
+      <DependentUpon>FormTorneios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partial Classes\FormJogos.resx">
       <DependentUpon>FormJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\LoginAdministrador.resx">
@@ -263,17 +278,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="TabelaBaralho.resx">
+    <EmbeddedResource Include="Tabelas\TabelaBaralho.resx">
       <DependentUpon>TabelaBaralho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TabelaCartas.resx">
+    <EmbeddedResource Include="Tabelas\TabelaCartas.resx">
       <DependentUpon>TabelaCartas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\VistaAdmin.resx">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TabelaJogos.resx">
+    <EmbeddedResource Include="Tabelas\TabelaJogos.resx">
       <DependentUpon>TabelaJogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tabelas\TabelaTorneios.resx">
+      <DependentUpon>TabelaTorneios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaArbitro.resx">
       <DependentUpon>VistaArbitro.cs</DependentUpon>
