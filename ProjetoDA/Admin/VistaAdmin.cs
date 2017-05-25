@@ -28,5 +28,10 @@ namespace ProjetoDA
             EditJogadores newEdit = new EditJogadores();
             newEdit.ShowDialog();
         }
+
+        private void inserirEditarRemoverJogoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,13 +28,13 @@ namespace ProjetoDA
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
-            FormJogos form = new FormJogos();
+            /*FormJogos form = new FormJogos();
             DialogResult resultado = form.ShowDialog();
 
             if (resultado == DialogResult.OK)
             {
                 AdicionarJogo(form.NovoJogo);
-            }
+            }*/
         }
 
         private void refreshListaJogos()

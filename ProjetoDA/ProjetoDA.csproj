@@ -106,6 +106,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormEquipas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormEquipas.Designer.cs">
+      <DependentUpon>FormEquipas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormBaralho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,10 +124,10 @@
     <Compile Include="Formularios\FormCartas.Designer.cs">
       <DependentUpon>FormCartas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Partial Classes\FormJogos.cs">
+    <Compile Include="Formularios\FormJogos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Partial Classes\FormJogos.Designer.cs">
+    <Compile Include="Formularios\FormJogos.Designer.cs">
       <DependentUpon>FormJogos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormTorneios.cs">
@@ -168,6 +174,8 @@
     </Compile>
     <Compile Include="Partial Classes\Baralho.cs" />
     <Compile Include="Partial Classes\Carta.cs" />
+    <Compile Include="Partial Classes\Equipas.cs" />
+    <Compile Include="Partial Classes\Torneio.cs" />
     <Compile Include="Player.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -181,6 +189,12 @@
     </Compile>
     <Compile Include="StandardTournament.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tabelas\TabelaEquipas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tabelas\TabelaEquipas.Designer.cs">
+      <DependentUpon>TabelaEquipas.cs</DependentUpon>
     </Compile>
     <Compile Include="Tabelas\TabelaBaralho.cs">
       <SubType>Form</SubType>
@@ -254,10 +268,13 @@
     <EmbeddedResource Include="Formularios\FormCartas.resx">
       <DependentUpon>FormCartas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormEquipas.resx">
+      <DependentUpon>FormEquipas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormTorneios.resx">
       <DependentUpon>FormTorneios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Partial Classes\FormJogos.resx">
+    <EmbeddedResource Include="Formularios\FormJogos.resx">
       <DependentUpon>FormJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\LoginAdministrador.resx">
@@ -278,6 +295,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tabelas\TabelaEquipas.resx">
+      <DependentUpon>TabelaEquipas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tabelas\TabelaBaralho.resx">
       <DependentUpon>TabelaBaralho.cs</DependentUpon>
     </EmbeddedResource>

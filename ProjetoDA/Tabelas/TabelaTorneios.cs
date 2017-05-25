@@ -23,7 +23,7 @@ namespace ProjetoDA
             container = new Model1Container();
             ficheiro = null;
 
-            refreshListaCards();
+            refreshListaTorneio();
         }
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
@@ -33,18 +33,18 @@ namespace ProjetoDA
 
             if (resultado == DialogResult.OK)
             {
-                AdicionarCarta(form.NovoTorneio);
+                AdicionarTorneio(form.NovoTorneio);
             }
         }
 
-        private void AdicionarCarta(Tournament torneio)
+        private void AdicionarTorneio(Tournament torneio)
         {
             container.TournamentSet.Add(torneio);
             container.SaveChanges();
-            refreshListaCards();
+            refreshListaTorneio();
         }
 
-        private void refreshListaCards()
+        private void refreshListaTorneio()
         {
             listBoxTorneios.Items.Clear();
             listBoxTorneios.Items.AddRange(container.TournamentSet.ToArray());
@@ -67,14 +67,15 @@ namespace ProjetoDA
                 listBoxTorneios.Items.AddRange(container.TournamentSet.ToArray());
 
                 //insere
-                FormCartas form = new FormCartas();
+                FormTorneios form = new FormTorneios();
                 DialogResult resultado = form.ShowDialog();
 
                 if (resultado == DialogResult.OK)
                 {
-                    AdicionarCarta(form.NovoTorneio);
+                    AdicionarTorneio(form.NovoTorneio);
                 }
             }
+        }
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
@@ -85,7 +86,7 @@ namespace ProjetoDA
             container.SaveChanges();
 
             listBoxTorneios.Items.Clear();
-            listBoxTorneios.Items.AddRange(container.CardSet.ToArray());
+            listBoxTorneios.Items.AddRange(container.TournamentSet.ToArray());
         }
 
         private void listBoxTorneios_SelectedIndexChanged(object sender, EventArgs e)
