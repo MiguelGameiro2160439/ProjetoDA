@@ -12,16 +12,13 @@ namespace ProjetoDA
 {
     public partial class TabelaJogos : Form
     {
-        private string ficheiro;
         private Model1Container container;
-        private Game jogoSelecionado;
 
         public TabelaJogos()
         {
             InitializeComponent();
 
             container = new Model1Container();
-            ficheiro = null;
 
             refreshListaJogos();
         }

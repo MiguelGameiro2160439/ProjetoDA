@@ -12,7 +12,6 @@ namespace ProjetoDA
 {
     public partial class TabelaTorneios : Form
     {
-        private string ficheiro;
         private Model1Container container;
         private Tournament torneioSelecionado;
 
@@ -21,7 +20,6 @@ namespace ProjetoDA
             InitializeComponent();
 
             container = new Model1Container();
-            ficheiro = null;
 
             refreshListaTorneio();
         }

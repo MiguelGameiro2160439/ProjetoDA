@@ -12,7 +12,6 @@ namespace ProjetoDA
 {
     public partial class TabelaEquipas : Form
     {
-        private string ficheiro;
         private Model1Container container;
         private Team equipaSelecionada;
 
@@ -21,7 +20,6 @@ namespace ProjetoDA
             InitializeComponent();
 
             container = new Model1Container();
-            ficheiro = null;
 
             refreshListaEquipas();
         }
