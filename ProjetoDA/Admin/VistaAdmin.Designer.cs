@@ -54,6 +54,9 @@
             this.listBoxTorneios = new System.Windows.Forms.ListBox();
             this.listBoxArbitros = new System.Windows.Forms.ListBox();
             this.listBoxJogos = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -228,7 +231,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(17, 304);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(397, 22);
             this.textBox1.TabIndex = 1;
@@ -236,7 +239,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(424, 300);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(184, 28);
             this.button1.TabIndex = 2;
@@ -247,42 +250,72 @@
             // 
             this.listBoxTorneios.FormattingEnabled = true;
             this.listBoxTorneios.ItemHeight = 16;
-            this.listBoxTorneios.Location = new System.Drawing.Point(217, 32);
-            this.listBoxTorneios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxTorneios.Location = new System.Drawing.Point(217, 64);
+            this.listBoxTorneios.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxTorneios.Name = "listBoxTorneios";
-            this.listBoxTorneios.Size = new System.Drawing.Size(190, 260);
+            this.listBoxTorneios.Size = new System.Drawing.Size(190, 228);
             this.listBoxTorneios.TabIndex = 3;
             // 
             // listBoxArbitros
             // 
             this.listBoxArbitros.FormattingEnabled = true;
             this.listBoxArbitros.ItemHeight = 16;
-            this.listBoxArbitros.Location = new System.Drawing.Point(12, 31);
+            this.listBoxArbitros.Location = new System.Drawing.Point(12, 63);
             this.listBoxArbitros.Name = "listBoxArbitros";
-            this.listBoxArbitros.Size = new System.Drawing.Size(198, 260);
+            this.listBoxArbitros.Size = new System.Drawing.Size(198, 228);
             this.listBoxArbitros.TabIndex = 4;
             // 
             // listBoxJogos
             // 
             this.listBoxJogos.FormattingEnabled = true;
             this.listBoxJogos.ItemHeight = 16;
-            this.listBoxJogos.Location = new System.Drawing.Point(414, 32);
+            this.listBoxJogos.Location = new System.Drawing.Point(414, 64);
             this.listBoxJogos.Name = "listBoxJogos";
-            this.listBoxJogos.Size = new System.Drawing.Size(198, 260);
+            this.listBoxJogos.Size = new System.Drawing.Size(198, 228);
             this.listBoxJogos.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(79, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Arbitros";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(275, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Torneios";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(488, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Jogos";
             // 
             // VistaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 364);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.listBoxJogos);
             this.Controls.Add(this.listBoxArbitros);
             this.Controls.Add(this.listBoxTorneios);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "VistaAdmin";
             this.Text = "VistaAdmin";
             this.menuStrip1.ResumeLayout(false);
@@ -320,5 +353,8 @@
         private System.Windows.Forms.ToolStripMenuItem inserirEditarRemoverToolStripMenuItem1;
         private System.Windows.Forms.ListBox listBoxArbitros;
         private System.Windows.Forms.ListBox listBoxJogos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

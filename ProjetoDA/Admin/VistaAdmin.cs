@@ -63,9 +63,9 @@ namespace ProjetoDA
             listBoxArbitros.Items.Clear();
             listBoxJogos.Items.Clear();
             listBoxTorneios.Items.Clear();
-            listBoxArbitros.Items.Add(mcontainer.UserSet.OfType<Referee>().ToArray());
-            listBoxJogos.Items.Add(mcontainer.GameSet.ToArray());
-            listBoxTorneios.Items.Add(mcontainer.TournamentSet.ToArray());
+            listBoxArbitros.Items.AddRange(mcontainer.UserSet.OfType<Referee>().ToArray());
+            listBoxJogos.Items.AddRange(mcontainer.GameSet.ToArray());
+            listBoxTorneios.Items.AddRange(mcontainer.TournamentSet.ToArray());
         }
     }
 }

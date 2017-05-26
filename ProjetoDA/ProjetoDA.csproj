@@ -106,17 +106,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormAddCartas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormAddCartas.Designer.cs">
+      <DependentUpon>FormAddCartas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormEquipas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FormEquipas.Designer.cs">
       <DependentUpon>FormEquipas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FormBaralho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FormBaralho.Designer.cs">
-      <DependentUpon>FormBaralho.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormCartas.cs">
       <SubType>Form</SubType>
@@ -264,8 +264,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FormBaralho.resx">
-      <DependentUpon>FormBaralho.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\FormAddCartas.resx">
+      <DependentUpon>FormAddCartas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormCartas.resx">
       <DependentUpon>FormCartas.cs</DependentUpon>
