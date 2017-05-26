@@ -14,24 +14,25 @@ namespace ProjetoDA
     {
         private Model1Container container;
 
-        public TabelaJogos()
+        public TabelaJogos(Model1Container container)
         {
             InitializeComponent();
 
             container = new Model1Container();
+            ficheiro = null;
 
             refreshListaJogos();
         }
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
-            /*FormJogos form = new FormJogos();
+            FormJogos form = new FormJogos(this.container);
             DialogResult resultado = form.ShowDialog();
 
             if (resultado == DialogResult.OK)
             {
                 AdicionarJogo(form.NovoJogo);
-            }*/
+            }
         }
 
         private void refreshListaJogos()
