@@ -106,6 +106,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FormJogoNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormJogoNormal.Designer.cs">
+      <DependentUpon>FormJogoNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormJogos.Designer.cs">
+      <DependentUpon>FormJogos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormAddCartas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +135,6 @@
     </Compile>
     <Compile Include="Formularios\FormCartas.Designer.cs">
       <DependentUpon>FormCartas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\FormJogos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\FormJogos.Designer.cs">
-      <DependentUpon>FormJogos.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormTorneios.cs">
       <SubType>Form</SubType>
@@ -264,6 +270,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormJogoNormal.resx">
+      <DependentUpon>FormJogoNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormJogos.resx">
+      <DependentUpon>FormJogos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormAddCartas.resx">
       <DependentUpon>FormAddCartas.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,9 +287,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormTorneios.resx">
       <DependentUpon>FormTorneios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FormJogos.resx">
-      <DependentUpon>FormJogos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\LoginAdministrador.resx">
       <DependentUpon>LoginAdministrador.cs</DependentUpon>

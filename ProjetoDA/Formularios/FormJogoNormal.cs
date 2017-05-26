@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace ProjetoDA
 {
-    public partial class FormJogos : Form
+    public partial class FormJogoNormal : Form
     {
         Model1Container container;
-        public TeamGame NovoJogoEquipa { get; private set; }
+        public StandardGame NovoJogoNormal { get; private set; }
 
-        public FormJogos(Model1Container container)
+        public FormJogoNormal(Model1Container container)
         {
             InitializeComponent();
             this.container = container;
@@ -44,13 +44,13 @@ namespace ProjetoDA
                 baralho2 = (Deck)comboBoxBaralho2.SelectedItem;
             }
 
-            NovoJogoEquipa = new TeamGame();
+            NovoJogoNormal = new StandardGame();
 
-            NovoJogoEquipa.Number = (int)numericUpDownNum.Value;
-            NovoJogoEquipa.Date = dateTimePickerData.Value;
-            NovoJogoEquipa.Description = textBoxDescricao.Text.Trim();
-            NovoJogoEquipa.DeckOne = baralho1;
-            NovoJogoEquipa.DeckTwo = baralho2;
+            NovoJogoNormal.Number = (int)numericUpDownNum.Value;
+            NovoJogoNormal.Date = dateTimePickerData.Value;
+            NovoJogoNormal.Description = textBoxDescricao.Text.Trim();
+            NovoJogoNormal.DeckOne = baralho1;
+            NovoJogoNormal.DeckTwo = baralho2;
 
 
             DialogResult = DialogResult.OK;

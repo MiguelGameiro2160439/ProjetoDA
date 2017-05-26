@@ -35,6 +35,7 @@
             this.listBoxJogosStandard = new System.Windows.Forms.ListBox();
             this.buttonAdicionarStandard = new System.Windows.Forms.Button();
             this.buttonEditarStandard = new System.Windows.Forms.Button();
+            this.buttonRemoverJogoNormal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxJogos
@@ -44,6 +45,7 @@
             this.listBoxJogos.Name = "listBoxJogos";
             this.listBoxJogos.Size = new System.Drawing.Size(162, 134);
             this.listBoxJogos.TabIndex = 0;
+            this.listBoxJogos.SelectedIndexChanged += new System.EventHandler(this.listBoxJogos_SelectedIndexChanged);
             // 
             // buttonAdicionar
             // 
@@ -67,7 +69,7 @@
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(153, 226);
+            this.buttonEliminar.Location = new System.Drawing.Point(12, 191);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(75, 23);
             this.buttonEliminar.TabIndex = 3;
@@ -82,6 +84,7 @@
             this.listBoxJogosStandard.Name = "listBoxJogosStandard";
             this.listBoxJogosStandard.Size = new System.Drawing.Size(157, 134);
             this.listBoxJogosStandard.TabIndex = 4;
+            this.listBoxJogosStandard.SelectedIndexChanged += new System.EventHandler(this.listBoxJogosStandard_SelectedIndexChanged);
             // 
             // buttonAdicionarStandard
             // 
@@ -91,6 +94,7 @@
             this.buttonAdicionarStandard.TabIndex = 5;
             this.buttonAdicionarStandard.Text = "Inserir";
             this.buttonAdicionarStandard.UseVisualStyleBackColor = true;
+            this.buttonAdicionarStandard.Click += new System.EventHandler(this.buttonAdicionarStandard_Click);
             // 
             // buttonEditarStandard
             // 
@@ -100,12 +104,24 @@
             this.buttonEditarStandard.TabIndex = 7;
             this.buttonEditarStandard.Text = "Editar";
             this.buttonEditarStandard.UseVisualStyleBackColor = true;
+            this.buttonEditarStandard.Click += new System.EventHandler(this.buttonEditarStandard_Click);
+            // 
+            // buttonRemoverJogoNormal
+            // 
+            this.buttonRemoverJogoNormal.Location = new System.Drawing.Point(303, 191);
+            this.buttonRemoverJogoNormal.Name = "buttonRemoverJogoNormal";
+            this.buttonRemoverJogoNormal.Size = new System.Drawing.Size(75, 23);
+            this.buttonRemoverJogoNormal.TabIndex = 8;
+            this.buttonRemoverJogoNormal.Text = "Eliminar";
+            this.buttonRemoverJogoNormal.UseVisualStyleBackColor = true;
+            this.buttonRemoverJogoNormal.Click += new System.EventHandler(this.buttonRemoverJogoNormal_Click);
             // 
             // TabelaJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 261);
+            this.Controls.Add(this.buttonRemoverJogoNormal);
             this.Controls.Add(this.buttonEditarStandard);
             this.Controls.Add(this.buttonAdicionarStandard);
             this.Controls.Add(this.listBoxJogosStandard);
@@ -128,5 +144,6 @@
         private System.Windows.Forms.ListBox listBoxJogosStandard;
         private System.Windows.Forms.Button buttonAdicionarStandard;
         private System.Windows.Forms.Button buttonEditarStandard;
+        private System.Windows.Forms.Button buttonRemoverJogoNormal;
     }
 }
