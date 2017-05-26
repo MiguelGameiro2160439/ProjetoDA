@@ -37,7 +37,8 @@ namespace ProjetoDA
 
         private void inserirEditarRemoverEquipasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TabelaEquipas newEdit = new TabelaEquipas();
+            newEdit.ShowDialog();
         }
 
         private void inserirEditarRemoverCartaToolStripMenuItem_Click(object sender, EventArgs e)
