@@ -32,6 +32,9 @@
             this.buttonAdicionar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
+            this.listBoxJogosStandard = new System.Windows.Forms.ListBox();
+            this.buttonAdicionarStandard = new System.Windows.Forms.Button();
+            this.buttonEditarStandard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxJogos
@@ -39,12 +42,12 @@
             this.listBoxJogos.FormattingEnabled = true;
             this.listBoxJogos.Location = new System.Drawing.Point(12, 12);
             this.listBoxJogos.Name = "listBoxJogos";
-            this.listBoxJogos.Size = new System.Drawing.Size(496, 134);
+            this.listBoxJogos.Size = new System.Drawing.Size(162, 134);
             this.listBoxJogos.TabIndex = 0;
             // 
             // buttonAdicionar
             // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(12, 210);
+            this.buttonAdicionar.Location = new System.Drawing.Point(12, 162);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Size = new System.Drawing.Size(75, 23);
             this.buttonAdicionar.TabIndex = 1;
@@ -54,7 +57,7 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.Location = new System.Drawing.Point(222, 210);
+            this.buttonEditar.Location = new System.Drawing.Point(93, 162);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(75, 23);
             this.buttonEditar.TabIndex = 2;
@@ -64,7 +67,7 @@
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(424, 210);
+            this.buttonEliminar.Location = new System.Drawing.Point(153, 226);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(75, 23);
             this.buttonEliminar.TabIndex = 3;
@@ -72,11 +75,40 @@
             this.buttonEliminar.UseVisualStyleBackColor = true;
             this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
+            // listBoxJogosStandard
+            // 
+            this.listBoxJogosStandard.FormattingEnabled = true;
+            this.listBoxJogosStandard.Location = new System.Drawing.Point(220, 12);
+            this.listBoxJogosStandard.Name = "listBoxJogosStandard";
+            this.listBoxJogosStandard.Size = new System.Drawing.Size(157, 134);
+            this.listBoxJogosStandard.TabIndex = 4;
+            // 
+            // buttonAdicionarStandard
+            // 
+            this.buttonAdicionarStandard.Location = new System.Drawing.Point(220, 162);
+            this.buttonAdicionarStandard.Name = "buttonAdicionarStandard";
+            this.buttonAdicionarStandard.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdicionarStandard.TabIndex = 5;
+            this.buttonAdicionarStandard.Text = "Inserir";
+            this.buttonAdicionarStandard.UseVisualStyleBackColor = true;
+            // 
+            // buttonEditarStandard
+            // 
+            this.buttonEditarStandard.Location = new System.Drawing.Point(303, 162);
+            this.buttonEditarStandard.Name = "buttonEditarStandard";
+            this.buttonEditarStandard.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditarStandard.TabIndex = 7;
+            this.buttonEditarStandard.Text = "Editar";
+            this.buttonEditarStandard.UseVisualStyleBackColor = true;
+            // 
             // TabelaJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 261);
+            this.ClientSize = new System.Drawing.Size(389, 261);
+            this.Controls.Add(this.buttonEditarStandard);
+            this.Controls.Add(this.buttonAdicionarStandard);
+            this.Controls.Add(this.listBoxJogosStandard);
             this.Controls.Add(this.buttonEliminar);
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonAdicionar);
@@ -93,5 +125,8 @@
         private System.Windows.Forms.Button buttonAdicionar;
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.ListBox listBoxJogosStandard;
+        private System.Windows.Forms.Button buttonAdicionarStandard;
+        private System.Windows.Forms.Button buttonEditarStandard;
     }
 }

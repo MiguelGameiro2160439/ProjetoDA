@@ -14,7 +14,7 @@ namespace ProjetoDA
     {
 
         Model1Container container;
-        public Game NovoJogo { get; private set; }
+        public TeamGame NovoJogo { get; private set; }
         public FormJogos(Model1Container container)
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace ProjetoDA
                 baralho2 = (Deck)comboBoxBaralho2.SelectedItem;
             }
 
-            NovoJogo = new Game();
+            NovoJogo = new TeamGame();
 
             NovoJogo.Number = (int)numericUpDownNum.Value;
             NovoJogo.Date = dateTimePickerData.Value;

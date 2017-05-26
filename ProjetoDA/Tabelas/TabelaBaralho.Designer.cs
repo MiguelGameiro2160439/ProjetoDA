@@ -39,7 +39,7 @@
             // 
             // buttonRemover
             // 
-            this.buttonRemover.Location = new System.Drawing.Point(294, 166);
+            this.buttonRemover.Location = new System.Drawing.Point(460, 166);
             this.buttonRemover.Name = "buttonRemover";
             this.buttonRemover.Size = new System.Drawing.Size(75, 23);
             this.buttonRemover.TabIndex = 7;
@@ -49,7 +49,7 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.Location = new System.Drawing.Point(153, 166);
+            this.buttonEditar.Location = new System.Drawing.Point(319, 166);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(75, 23);
             this.buttonEditar.TabIndex = 6;
@@ -59,7 +59,7 @@
             // 
             // buttonAdicionarCarta
             // 
-            this.buttonAdicionarCarta.Location = new System.Drawing.Point(12, 166);
+            this.buttonAdicionarCarta.Location = new System.Drawing.Point(24, 166);
             this.buttonAdicionarCarta.Name = "buttonAdicionarCarta";
             this.buttonAdicionarCarta.Size = new System.Drawing.Size(84, 23);
             this.buttonAdicionarCarta.TabIndex = 5;
@@ -105,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 206);
+            this.ClientSize = new System.Drawing.Size(611, 244);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonInserirBaralho);

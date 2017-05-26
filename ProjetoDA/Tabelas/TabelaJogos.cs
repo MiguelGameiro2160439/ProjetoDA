@@ -14,14 +14,14 @@ namespace ProjetoDA
     {
         private Model1Container container;
 
-        public TabelaJogos(Model1Container container)
+        public TabelaJogos()
         {
             InitializeComponent();
 
-            container = new Model1Container();
-            ficheiro = null;
+            this.container = new Model1Container();
 
-            refreshListaJogos();
+
+            refreshListajogoEquipa();
         }
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
@@ -35,17 +35,17 @@ namespace ProjetoDA
             }
         }
 
-        private void refreshListaJogos()
+        private void refreshListajogoEquipa()
         {
             listBoxJogos.Items.Clear();
             listBoxJogos.Items.AddRange(container.GameSet.ToArray());
         }
 
-        private void AdicionarJogo(Game jogo)
+        private void AdicionarJogo(TeamGame jogoEquipa)
         {
-            container.GameSet.Add(jogo);
-            container.SaveChanges(); 
-            refreshListaJogos();
+            container.GameSet.Add(jogoEquipa);
+            container.SaveChanges();
+            refreshListajogoEquipa();
         }
 
         private void buttonEditar_Click(object sender, EventArgs e)
