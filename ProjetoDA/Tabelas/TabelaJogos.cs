@@ -12,29 +12,26 @@ namespace ProjetoDA
 {
     public partial class TabelaJogos : Form
     {
-        private string ficheiro;
         private Model1Container container;
-        private Game jogoSelecionado;
 
-        public TabelaJogos(Model1Container container)
+        public TabelaJogos()
         {
             InitializeComponent();
-            this.container = container;
-            //container = new Model1Container();
-            ficheiro = null;
+
+            container = new Model1Container();
 
             refreshListaJogos();
         }
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
-            FormJogos form = new FormJogos(this.container);
+            /*FormJogos form = new FormJogos();
             DialogResult resultado = form.ShowDialog();
 
             if (resultado == DialogResult.OK)
             {
                 AdicionarJogo(form.NovoJogo);
-            }
+            }*/
         }
 
         private void refreshListaJogos()

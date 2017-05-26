@@ -38,7 +38,7 @@
             // textBoxUtilizador
             // 
             this.textBoxUtilizador.Location = new System.Drawing.Point(135, 100);
-            this.textBoxUtilizador.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxUtilizador.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxUtilizador.Name = "textBoxUtilizador";
             this.textBoxUtilizador.Size = new System.Drawing.Size(132, 22);
             this.textBoxUtilizador.TabIndex = 0;
@@ -46,8 +46,9 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Location = new System.Drawing.Point(135, 148);
-            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(132, 22);
             this.textBoxPassword.TabIndex = 1;
             // 
@@ -91,7 +92,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUtilizador);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginAdministrador";
             this.Text = "LoginAdministrador";
             this.ResumeLayout(false);

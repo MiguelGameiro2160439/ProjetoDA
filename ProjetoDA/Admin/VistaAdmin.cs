@@ -31,7 +31,25 @@ namespace ProjetoDA
 
         private void inserirEditarRemoverJogoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            TabelaJogos newEdit = new TabelaJogos();
+            newEdit.ShowDialog();
+        }
 
+        private void inserirEditarRemoverEquipasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirEditarRemoverCartaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TabelaCartas newEdit = new TabelaCartas();
+            newEdit.ShowDialog();
+        }
+
+        private void inserirEditarRemoverBaralhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TabelaBaralho newEdit = new TabelaBaralho();
+            newEdit.ShowDialog();
         }
     }
 }
