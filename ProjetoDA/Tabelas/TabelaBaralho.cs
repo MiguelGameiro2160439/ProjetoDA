@@ -94,5 +94,10 @@ namespace ProjetoDA
         {
             return container.DeckSet.ToList();
         }
+
+        private void buttonAdicionarCarta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
