@@ -21,6 +21,7 @@ namespace ProjetoDA
         {
             InitializeComponent();
             mcontainer = new Model1Container();
+            atualizarLista();
         }
 
         private void buttonNovo_Click(object sender, EventArgs e)
@@ -45,7 +46,6 @@ namespace ProjetoDA
                 arbitroSelected.Password = textBoxPassword.Text;
                 arbitroSelected.Avatar = textBoxAvatar.Text;
 
-                mcontainer.UserSet.Add(arbitroSelected);
                 mcontainer.SaveChanges();
                 atualizarLista();
                 limparCampos();
@@ -56,7 +56,7 @@ namespace ProjetoDA
         private void atualizarLista()
         {
             listBoxArbitros.Items.Clear();
-            listBoxArbitros.Items.AddRange(mcontainer.UserSet.ToArray());
+            listBoxArbitros.Items.AddRange(mcontainer.UserSet.OfType<Referee>().ToArray());
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)

@@ -20,6 +20,7 @@ namespace ProjetoDA
         {
             InitializeComponent();
             mcontainer = new Model1Container();
+            atualizarLista();
         }
 
         private void buttonNovo_Click(object sender, EventArgs e)
@@ -42,7 +43,6 @@ namespace ProjetoDA
                 adminSelected.Password = textBoxPassword.Text;
                 adminSelected.Email = textBoxEmail.Text;
 
-                mcontainer.UserSet.Add(adminSelected);
                 mcontainer.SaveChanges();
                 atualizarLista();
                 limparCampos();
@@ -52,7 +52,7 @@ namespace ProjetoDA
         private void atualizarLista()
         {
             listBoxAdmins.Items.Clear();
-            listBoxAdmins.Items.AddRange(mcontainer.UserSet.ToArray());
+            listBoxAdmins.Items.AddRange(mcontainer.UserSet.OfType<Administrator>().ToArray());
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)

@@ -46,7 +46,6 @@ namespace ProjetoDA
                 jogadorSelected.Avatar = textBoxAvatar.Text;
                 jogadorSelected.Age = int.Parse(textBoxAge.Text);
 
-                mcontainer.PlayerSet.Add(jogadorSelected);
                 mcontainer.SaveChanges();
                 atualizarLista();
                 limparCampos();
