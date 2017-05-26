@@ -16,11 +16,11 @@ namespace ProjetoDA
         private Model1Container container;
         private Game jogoSelecionado;
 
-        public TabelaJogos()
+        public TabelaJogos(Model1Container container)
         {
             InitializeComponent();
-
-            container = new Model1Container();
+            this.container = container;
+            //container = new Model1Container();
             ficheiro = null;
 
             refreshListaJogos();
@@ -28,13 +28,13 @@ namespace ProjetoDA
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
-            /*FormJogos form = new FormJogos();
+            FormJogos form = new FormJogos(this.container);
             DialogResult resultado = form.ShowDialog();
 
             if (resultado == DialogResult.OK)
             {
                 AdicionarJogo(form.NovoJogo);
-            }*/
+            }
         }
 
         private void refreshListaJogos()

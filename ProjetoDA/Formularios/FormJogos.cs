@@ -12,15 +12,18 @@ namespace ProjetoDA
 {
     public partial class FormJogos : Form
     {
+
+        Model1Container container;
         public Game NovoJogo { get; private set; }
-        public FormJogos(TabelaBaralho baralhos)
+        public FormJogos(Model1Container container)
         {
             InitializeComponent();
+            this.container = container;
 
-            if (baralhos != null)
+            if (container != null)
             {
-                comboBoxBaralho1.Items.AddRange(baralhos.ListaBaralho().ToArray());
-                comboBoxBaralho2.Items.AddRange(baralhos.ListaBaralho().ToArray());
+                comboBoxBaralho1.Items.AddRange(container.DeckSet.ToArray());
+                comboBoxBaralho2.Items.AddRange(container.DeckSet.ToArray());
                 
             }
         }
