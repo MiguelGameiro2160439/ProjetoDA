@@ -12,9 +12,14 @@ namespace ProjetoDA
 {
     public partial class VistaAdmin : Form
     {
+
+        Model1Container mcontainer;
+
         public VistaAdmin()
         {
             InitializeComponent();
+            mcontainer = new Model1Container();
+            refreshList();
         }
 
         private void inserirEditarRemoverUtilizadorToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,6 +56,16 @@ namespace ProjetoDA
         {
             TabelaBaralho newEdit = new TabelaBaralho();
             newEdit.ShowDialog();
+        }
+
+        private void refreshList()
+        {
+            listBoxArbitros.Items.Clear();
+            listBoxJogos.Items.Clear();
+            listBoxTorneios.Items.Clear();
+            listBoxArbitros.Items.AddRange(mcontainer.UserSet.OfType<Referee>().ToArray());
+            listBoxJogos.Items.AddRange(mcontainer.GameSet.ToArray());
+            listBoxTorneios.Items.AddRange(mcontainer.TournamentSet.ToArray());
         }
     }
 }
