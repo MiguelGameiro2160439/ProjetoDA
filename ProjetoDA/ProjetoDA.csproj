@@ -106,10 +106,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTorneioNormal.cs">
+    <Compile Include="Formularios\FormTorneioNormal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTorneioNormal.Designer.cs">
+    <Compile Include="Formularios\FormTorneioNormal.Designer.cs">
       <DependentUpon>FormTorneioNormal.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormJogoNormal.cs">
@@ -276,7 +276,7 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTorneioNormal.resx">
+    <EmbeddedResource Include="Formularios\FormTorneioNormal.resx">
       <DependentUpon>FormTorneioNormal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormJogoNormal.resx">

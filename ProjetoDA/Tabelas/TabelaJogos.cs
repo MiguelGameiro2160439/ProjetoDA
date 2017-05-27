@@ -60,7 +60,7 @@ namespace ProjetoDA
         {
             container.GameSet.Add(jogoNormal);
             container.SaveChanges();
-            refreshListajogoEquipa();
+            refreshListajogoNormal();
         }
 
         private void buttonEditar_Click(object sender, EventArgs e)

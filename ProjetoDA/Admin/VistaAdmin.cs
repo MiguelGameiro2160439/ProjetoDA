@@ -34,12 +34,6 @@ namespace ProjetoDA
             newEdit.ShowDialog();
         }
 
-        private void inserirEditarRemoverJogoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TabelaJogos newEdit = new TabelaJogos();
-            newEdit.ShowDialog();
-        }
-
         private void inserirEditarRemoverEquipasToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TabelaEquipas newEdit = new TabelaEquipas();
@@ -66,6 +60,18 @@ namespace ProjetoDA
             listBoxArbitros.Items.AddRange(mcontainer.UserSet.OfType<Referee>().ToArray());
             listBoxJogos.Items.AddRange(mcontainer.GameSet.ToArray());
             listBoxTorneios.Items.AddRange(mcontainer.TournamentSet.ToArray());
+        }
+
+        private void inserirEditarRemoverJogosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TabelaJogos newEdit = new TabelaJogos();
+            newEdit.ShowDialog();
+        }
+
+        private void inserirEditarRemoverTorneiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TabelaTorneios newEdit = new TabelaTorneios();
+            newEdit.ShowDialog();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace ProjetoDA
     public partial class EditArbitro : Form
     {
 
-        Model1Container mcontainer;
+        private Model1Container mcontainer;
         private Referee arbitroSelected;
 
         public EditArbitro()

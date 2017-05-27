@@ -79,6 +79,7 @@ namespace ProjetoDA
 
         private void buttonSelect_Click(object sender, EventArgs e)
         {
+            selectedDeck = (Deck)listBoxBaralho.SelectedItem;
             listBoxCartasBaralho.Items.Clear();
             listBoxCartasBaralho.Items.AddRange(selectedDeck.Cards.ToArray());
         }

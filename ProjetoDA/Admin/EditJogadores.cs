@@ -13,7 +13,7 @@ namespace ProjetoDA
     public partial class EditJogadores : Form
     {
 
-        Model1Container mcontainer;
+        private Model1Container mcontainer;
         private Player jogadorSelected;
 
         public EditJogadores()
