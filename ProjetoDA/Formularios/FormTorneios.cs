@@ -12,7 +12,7 @@ namespace ProjetoDA
 {
     public partial class FormTorneios : Form
     {
-        public Tournament NovoTorneio { get; private set; }
+        public TeamTournament NovoTorneioEquipa { get; private set; }
 
         public FormTorneios()
         {
@@ -21,11 +21,11 @@ namespace ProjetoDA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            NovoTorneio = new Tournament();
+            NovoTorneioEquipa = new TeamTournament();
 
-            NovoTorneio.Name = textBoxNome.Text.Trim();
-            NovoTorneio.Date = dateTimePickerData.Value;
-            NovoTorneio.Description = textBoxDescricao.Text.Trim();
+            NovoTorneioEquipa.Name = textBoxNome.Text.Trim();
+            NovoTorneioEquipa.Date = dateTimePickerData.Value;
+            NovoTorneioEquipa.Description = textBoxDescricao.Text.Trim();
           
 
             DialogResult = DialogResult.OK;

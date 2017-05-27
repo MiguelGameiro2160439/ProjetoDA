@@ -23,6 +23,7 @@ namespace ProjetoDA
             this.container = new Model1Container();
 
             refreshListajogoEquipa();
+            refreshListajogoNormal();
         }
 
         private void buttonAdicionar_Click(object sender, EventArgs e)
@@ -44,8 +45,8 @@ namespace ProjetoDA
 
         private void refreshListajogoNormal()
         {
-            listBoxJogos.Items.Clear();
-            listBoxJogos.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
+            listBoxJogosStandard.Items.Clear();
+            listBoxJogosStandard.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
         }
 
         private void AdicionarJogoEquipa(TeamGame jogoEquipa)
@@ -76,7 +77,7 @@ namespace ProjetoDA
                 container.SaveChanges();
 
 
-                listBoxJogos.Items.AddRange(container.GameSet.ToArray());
+                listBoxJogos.Items.AddRange(container.GameSet.OfType<TeamGame>().ToArray());
 
                 //insere
                 FormJogos form = new FormJogos(this.container);
@@ -98,7 +99,7 @@ namespace ProjetoDA
             container.SaveChanges();
 
             listBoxJogos.Items.Clear();
-            listBoxJogos.Items.AddRange(container.GameSet.ToArray());
+            listBoxJogos.Items.AddRange(container.GameSet.OfType<TeamGame>().ToArray());
         }
 
         private void listBoxJogos_SelectedIndexChanged(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace ProjetoDA
             container.SaveChanges();
 
             listBoxJogos.Items.Clear();
-            listBoxJogos.Items.AddRange(container.GameSet.ToArray());
+            listBoxJogos.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
         }
 
         private void listBoxJogosStandard_SelectedIndexChanged(object sender, EventArgs e)
@@ -148,7 +149,7 @@ namespace ProjetoDA
                 container.SaveChanges();
 
 
-                listBoxJogosStandard.Items.AddRange(container.GameSet.ToArray());
+                listBoxJogosStandard.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
 
                 //insere
                 FormJogoNormal form = new FormJogoNormal(this.container);
