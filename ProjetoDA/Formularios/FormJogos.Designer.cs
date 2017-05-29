@@ -39,17 +39,19 @@
             this.dateTimePickerData = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
-            this.comboBoxEquipa2 = new System.Windows.Forms.ComboBox();
             this.comboBoxEquipa1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxEquipa2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTorneio = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNum)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxBaralho2
             // 
             this.comboBoxBaralho2.FormattingEnabled = true;
-            this.comboBoxBaralho2.Location = new System.Drawing.Point(12, 161);
+            this.comboBoxBaralho2.Location = new System.Drawing.Point(15, 163);
             this.comboBoxBaralho2.Name = "comboBoxBaralho2";
             this.comboBoxBaralho2.Size = new System.Drawing.Size(110, 21);
             this.comboBoxBaralho2.TabIndex = 32;
@@ -57,7 +59,7 @@
             // comboBoxBaralho1
             // 
             this.comboBoxBaralho1.FormattingEnabled = true;
-            this.comboBoxBaralho1.Location = new System.Drawing.Point(12, 114);
+            this.comboBoxBaralho1.Location = new System.Drawing.Point(15, 116);
             this.comboBoxBaralho1.Name = "comboBoxBaralho1";
             this.comboBoxBaralho1.Size = new System.Drawing.Size(110, 21);
             this.comboBoxBaralho1.TabIndex = 31;
@@ -65,7 +67,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 145);
+            this.label5.Location = new System.Drawing.Point(12, 147);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 30;
@@ -74,7 +76,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 98);
+            this.label4.Location = new System.Drawing.Point(12, 100);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 29;
@@ -82,7 +84,7 @@
             // 
             // buttonAdicionar
             // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(297, 157);
+            this.buttonAdicionar.Location = new System.Drawing.Point(357, 190);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Size = new System.Drawing.Size(75, 23);
             this.buttonAdicionar.TabIndex = 28;
@@ -126,7 +128,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(133, 50);
+            this.label1.Location = new System.Drawing.Point(288, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 23;
@@ -134,51 +136,70 @@
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(136, 66);
+            this.textBoxDescricao.Location = new System.Drawing.Point(291, 26);
             this.textBoxDescricao.Multiline = true;
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(145, 114);
+            this.textBoxDescricao.Size = new System.Drawing.Size(145, 158);
             this.textBoxDescricao.TabIndex = 22;
-            // 
-            // comboBoxEquipa2
-            // 
-            this.comboBoxEquipa2.FormattingEnabled = true;
-            this.comboBoxEquipa2.Location = new System.Drawing.Point(262, 26);
-            this.comboBoxEquipa2.Name = "comboBoxEquipa2";
-            this.comboBoxEquipa2.Size = new System.Drawing.Size(110, 21);
-            this.comboBoxEquipa2.TabIndex = 36;
             // 
             // comboBoxEquipa1
             // 
             this.comboBoxEquipa1.FormattingEnabled = true;
-            this.comboBoxEquipa1.Location = new System.Drawing.Point(136, 26);
+            this.comboBoxEquipa1.Location = new System.Drawing.Point(156, 26);
             this.comboBoxEquipa1.Name = "comboBoxEquipa1";
             this.comboBoxEquipa1.Size = new System.Drawing.Size(110, 21);
             this.comboBoxEquipa1.TabIndex = 35;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(46, 13);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Equipa2";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(133, 10);
+            this.label7.Location = new System.Drawing.Point(153, 10);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(46, 13);
             this.label7.TabIndex = 33;
             this.label7.Text = "Equipa1";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(153, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Equipa2";
+            // 
+            // comboBoxEquipa2
+            // 
+            this.comboBoxEquipa2.FormattingEnabled = true;
+            this.comboBoxEquipa2.Location = new System.Drawing.Point(156, 66);
+            this.comboBoxEquipa2.Name = "comboBoxEquipa2";
+            this.comboBoxEquipa2.Size = new System.Drawing.Size(110, 21);
+            this.comboBoxEquipa2.TabIndex = 36;
+            // 
+            // comboBoxTorneio
+            // 
+            this.comboBoxTorneio.FormattingEnabled = true;
+            this.comboBoxTorneio.Location = new System.Drawing.Point(156, 116);
+            this.comboBoxTorneio.Name = "comboBoxTorneio";
+            this.comboBoxTorneio.Size = new System.Drawing.Size(110, 21);
+            this.comboBoxTorneio.TabIndex = 38;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(153, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Torneio";
+            // 
             // FormJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 192);
+            this.ClientSize = new System.Drawing.Size(444, 223);
+            this.Controls.Add(this.comboBoxTorneio);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBoxEquipa2);
             this.Controls.Add(this.comboBoxEquipa1);
             this.Controls.Add(this.label6);
@@ -215,9 +236,11 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerData;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxDescricao;
-        private System.Windows.Forms.ComboBox comboBoxEquipa2;
         private System.Windows.Forms.ComboBox comboBoxEquipa1;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBoxEquipa2;
+        private System.Windows.Forms.ComboBox comboBoxTorneio;
+        private System.Windows.Forms.Label label8;
     }
 }
