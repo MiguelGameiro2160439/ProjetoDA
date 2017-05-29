@@ -255,10 +255,10 @@
     <Compile Include="Admin\VistaAdmin.Designer.cs">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="VistaArbitro.cs">
+    <Compile Include="Arbitro\VistaArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VistaArbitro.Designer.cs">
+    <Compile Include="Arbitro\VistaArbitro.Designer.cs">
       <DependentUpon>VistaArbitro.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\EditAdmin.resx">
@@ -333,7 +333,7 @@
     <EmbeddedResource Include="Tabelas\TabelaTorneios.resx">
       <DependentUpon>TabelaTorneios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VistaArbitro.resx">
+    <EmbeddedResource Include="Arbitro\VistaArbitro.resx">
       <DependentUpon>VistaArbitro.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
