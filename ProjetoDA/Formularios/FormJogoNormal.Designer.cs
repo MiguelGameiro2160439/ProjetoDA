@@ -63,18 +63,18 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(9, 147);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 13);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 19;
-            this.label5.Text = "Baralho da Baralho  2";
+            this.label5.Text = "Baralho  2";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(9, 100);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 13);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 18;
-            this.label4.Text = "Baralho da Baralho 1";
+            this.label4.Text = "Baralho 1";
             // 
             // buttonAdicionar
             // 

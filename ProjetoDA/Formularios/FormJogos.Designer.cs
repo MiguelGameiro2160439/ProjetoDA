@@ -39,6 +39,10 @@
             this.dateTimePickerData = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
+            this.comboBoxEquipa2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxEquipa1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNum)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,22 +67,22 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(9, 145);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 13);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Baralho da Baralho  2";
+            this.label5.Text = "Baralho  2";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(9, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 13);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Baralho da Baralho 1";
+            this.label4.Text = "Baralho 1";
             // 
             // buttonAdicionar
             // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(229, 161);
+            this.buttonAdicionar.Location = new System.Drawing.Point(297, 157);
             this.buttonAdicionar.Name = "buttonAdicionar";
             this.buttonAdicionar.Size = new System.Drawing.Size(75, 23);
             this.buttonAdicionar.TabIndex = 28;
@@ -122,7 +126,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(156, 10);
+            this.label1.Location = new System.Drawing.Point(133, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 23;
@@ -130,17 +134,55 @@
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(159, 26);
+            this.textBoxDescricao.Location = new System.Drawing.Point(136, 66);
             this.textBoxDescricao.Multiline = true;
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(145, 85);
+            this.textBoxDescricao.Size = new System.Drawing.Size(145, 114);
             this.textBoxDescricao.TabIndex = 22;
+            // 
+            // comboBoxEquipa2
+            // 
+            this.comboBoxEquipa2.FormattingEnabled = true;
+            this.comboBoxEquipa2.Location = new System.Drawing.Point(262, 26);
+            this.comboBoxEquipa2.Name = "comboBoxEquipa2";
+            this.comboBoxEquipa2.Size = new System.Drawing.Size(110, 21);
+            this.comboBoxEquipa2.TabIndex = 36;
+            // 
+            // comboBoxEquipa1
+            // 
+            this.comboBoxEquipa1.FormattingEnabled = true;
+            this.comboBoxEquipa1.Location = new System.Drawing.Point(136, 26);
+            this.comboBoxEquipa1.Name = "comboBoxEquipa1";
+            this.comboBoxEquipa1.Size = new System.Drawing.Size(110, 21);
+            this.comboBoxEquipa1.TabIndex = 35;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(259, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(46, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Equipa2";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(133, 10);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 33;
+            this.label7.Text = "Equipa1";
             // 
             // FormJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 192);
+            this.ClientSize = new System.Drawing.Size(383, 192);
+            this.Controls.Add(this.comboBoxEquipa2);
+            this.Controls.Add(this.comboBoxEquipa1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.comboBoxBaralho2);
             this.Controls.Add(this.comboBoxBaralho1);
             this.Controls.Add(this.label5);
@@ -173,5 +215,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePickerData;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxDescricao;
+        private System.Windows.Forms.ComboBox comboBoxEquipa2;
+        private System.Windows.Forms.ComboBox comboBoxEquipa1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

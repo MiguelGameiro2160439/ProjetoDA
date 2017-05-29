@@ -49,7 +49,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 38);
+            this.label2.Location = new System.Drawing.Point(12, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(206, 85);
+            this.buttonOK.Location = new System.Drawing.Point(206, 83);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // buttonProcAvatar
             // 
-            this.buttonProcAvatar.Location = new System.Drawing.Point(67, 61);
+            this.buttonProcAvatar.Location = new System.Drawing.Point(67, 58);
             this.buttonProcAvatar.Name = "buttonProcAvatar";
             this.buttonProcAvatar.Size = new System.Drawing.Size(75, 23);
             this.buttonProcAvatar.TabIndex = 3;
@@ -77,7 +77,7 @@
             // 
             // textBoxAvatar
             // 
-            this.textBoxAvatar.Location = new System.Drawing.Point(67, 35);
+            this.textBoxAvatar.Location = new System.Drawing.Point(67, 32);
             this.textBoxAvatar.Name = "textBoxAvatar";
             this.textBoxAvatar.Size = new System.Drawing.Size(161, 20);
             this.textBoxAvatar.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(293, 120);
+            this.ClientSize = new System.Drawing.Size(293, 114);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.textBoxAvatar);
             this.Controls.Add(this.buttonProcAvatar);
