@@ -14,8 +14,8 @@ namespace ProjetoDA
     {
 
         private Model1Container mcontainer;
-        private Referee ArbitroSelected;
-        private Game GameSelected;
+        private Referee arbitroSelected;
+        private Game gameSelected;
 
         public VistaArbitro()
         {
@@ -28,35 +28,37 @@ namespace ProjetoDA
         {
             if (listBoxJogos.SelectedIndex >= 0)
             {
-                GameSelected = (Game)listBoxJogos.SelectedItem;
-                numericUpDownNum.Value = GameSelected.Number;
-                dateTimePickerData.Value = GameSelected.Date;
-                textBoxDescricao.Text = GameSelected.Description;
-                comboBoxBaralho1.SelectedItem = GameSelected.DeckOne;
-                comboBoxBaralho2.SelectedItem = GameSelected.DeckTwo;
+                gameSelected = (Game)listBoxJogos.SelectedItem;
+                numericUpDownNum.Value = gameSelected.Number;
+                dateTimePickerData.Value = gameSelected.Date;
+                textBoxDescricao.Text = gameSelected.Description;
+                comboBoxBaralho1.SelectedItem = gameSelected.DeckOne;
+                comboBoxBaralho2.SelectedItem = gameSelected.DeckTwo;
             }
         }
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            GameSelected.Number = (int)numericUpDownNum.Value;
-            GameSelected.Date = (DateTime)dateTimePickerData.Value;
-            GameSelected.Description = textBoxDescricao.Text;
-            GameSelected.DeckOne = (Deck)comboBoxBaralho1.SelectedItem;
-            GameSelected.DeckTwo = (Deck)comboBoxBaralho2.SelectedItem;
+            gameSelected.Number = (int)numericUpDownNum.Value;
+            gameSelected.Date = (DateTime)dateTimePickerData.Value;
+            gameSelected.Description = textBoxDescricao.Text;
+            gameSelected.DeckOne = (Deck)comboBoxBaralho1.SelectedItem;
+            gameSelected.DeckTwo = (Deck)comboBoxBaralho2.SelectedItem;
 
             mcontainer.SaveChanges();
+            atualizarLista();
+            limparCampos();
         }
 
         private void atualizarLista()
         {
             listBoxJogos.Items.Clear();
-            listBoxJogos.Items.AddRange(mcontainer.GameSet.ToArray());
+            listBoxJogos.Items.AddRange(arbitroSelected.Games.ToArray());
         }
 
         private void limparCampos()
         {
-            GameSelected = null;
+            gameSelected = null;
             textBoxDescricao.Text = "";
             numericUpDownNum.Value = 0;
             comboBoxBaralho1.SelectedItem = null;
