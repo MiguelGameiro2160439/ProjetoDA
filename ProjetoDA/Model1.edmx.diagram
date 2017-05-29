@@ -33,10 +33,11 @@
         <AssociationConnector Association="Model1.TeamGame_Team2" />
         <AssociationConnector Association="Model1.TeamTeamTournament" />
         <AssociationConnector Association="Model1.TeamPlayer" />
-        <AssociationConnector Association="Model1.PlayerStandard_Tournament" />
         <AssociationConnector Association="Model1.StandardGamePlayer" />
         <AssociationConnector Association="Model1.StandardGamePlayer1" />
         <AssociationConnector Association="Model1.StandardGameStandardTournament" />
+        <AssociationConnector Association="Model1.StandardTournamentPlayer" />
+        <AssociationConnector Association="Model1.PlayerStandard_Tournament" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

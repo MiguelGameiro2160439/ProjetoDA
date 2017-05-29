@@ -32,6 +32,7 @@
             this.buttonAdicionar = new System.Windows.Forms.Button();
             this.buttonRemover = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBoxEquipas
@@ -65,7 +66,7 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.Location = new System.Drawing.Point(164, 155);
+            this.buttonEditar.Location = new System.Drawing.Point(163, 155);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(75, 23);
             this.buttonEditar.TabIndex = 3;
@@ -73,11 +74,22 @@
             this.buttonEditar.UseVisualStyleBackColor = true;
             this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 184);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 43);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Adicionar Jogadores";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TabelaEquipas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 190);
+            this.ClientSize = new System.Drawing.Size(403, 234);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonRemover);
             this.Controls.Add(this.buttonAdicionar);
@@ -94,5 +106,6 @@
         private System.Windows.Forms.Button buttonAdicionar;
         private System.Windows.Forms.Button buttonRemover;
         private System.Windows.Forms.Button buttonEditar;
+        private System.Windows.Forms.Button button1;
     }
 }
