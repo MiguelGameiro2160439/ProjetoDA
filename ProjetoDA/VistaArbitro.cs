@@ -13,13 +13,14 @@ namespace ProjetoDA
     public partial class VistaArbitro : Form
     {
         private Model1Container mcontainer;
-        private Referee arbitroSelected;
         private Game gameSelected;
+        private Referee userSelecionado;
 
-        public VistaArbitro()
+        public VistaArbitro(Referee user)
         {
             InitializeComponent();
             mcontainer = new Model1Container();
+            userSelecionado = user;
             atualizarLista();
         }
 
@@ -39,7 +40,7 @@ namespace ProjetoDA
         private void atualizarLista()
         {
             listBoxJogos.Items.Clear();
-            //listBoxJogos.Items.AddRange(arbitroSelected.Games.ToArray());
+            listBoxJogos.Items.AddRange(userSelecionado.Games.ToArray());
         }
 
         private void limparCampos()

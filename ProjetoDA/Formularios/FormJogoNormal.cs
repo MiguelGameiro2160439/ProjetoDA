@@ -27,7 +27,7 @@ namespace ProjetoDA
                 comboBoxJogador1.Items.AddRange(container.PlayerSet.ToArray());
                 comboBoxJogador2.Items.AddRange(container.PlayerSet.ToArray());
                 comboBoxTorneio.Items.AddRange(container.TournamentSet.OfType<StandardTournament>().ToArray());
-               
+                comboBoxArbitro.Items.AddRange(container.UserSet.OfType<Referee>().ToArray());
 
             }
         }
@@ -39,6 +39,7 @@ namespace ProjetoDA
             Player jogador1 = null;
             Player jogador2 = null;
             StandardTournament torneio = null;
+            Referee arbitro = null;
 
             if (comboBoxBaralho1.SelectedIndex > -1)
             {
@@ -64,6 +65,12 @@ namespace ProjetoDA
             {
                 torneio = (StandardTournament)comboBoxTorneio.SelectedItem;
             }
+
+            if (comboBoxArbitro.SelectedIndex > -1)
+            {
+                arbitro = (Referee)comboBoxArbitro.SelectedItem;
+            }
+
             NovoJogoNormal = new StandardGame();
 
             NovoJogoNormal.Number = (int)numericUpDownNum.Value;
@@ -74,14 +81,12 @@ namespace ProjetoDA
             NovoJogoNormal.PlayerOne = jogador1;
             NovoJogoNormal.PlayerTwo = jogador2;
             NovoJogoNormal.Tournament = torneio;
+            NovoJogoNormal.Referee = arbitro;
 
             DialogResult = DialogResult.OK;
             Close();
         }
 
-        private void FormJogoNormal_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
