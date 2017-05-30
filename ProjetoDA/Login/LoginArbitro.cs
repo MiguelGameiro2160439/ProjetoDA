@@ -34,18 +34,17 @@ namespace ProjetoDA
 
             var utilizadores = from user in mcontainer.UserSet.OfType<Referee>() where user.Username == textBoxUtilizador.Text && user.Password == textBoxPassword.Text select user;
 
-            try
-            {
+            
                 Referee userSelecionado = utilizadores.First<Referee>();
-                VistaArbitro newVista = new VistaArbitro();
-                newVista.ShowDialog();
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("Invalid Login!"); ;
-            }
-
+                if (userSelecionado != null)
+                {
+                    VistaArbitro newVista = new VistaArbitro(userSelecionado);
+                    newVista.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Login!");
+                }
         }
     }
 }

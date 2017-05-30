@@ -199,6 +199,7 @@
     <Compile Include="Partial Classes\Baralho.cs" />
     <Compile Include="Partial Classes\Carta.cs" />
     <Compile Include="Partial Classes\Equipas.cs" />
+    <Compile Include="Partial Classes\Jogador.cs" />
     <Compile Include="Partial Classes\Jogo.cs" />
     <Compile Include="Partial Classes\Torneio.cs" />
     <Compile Include="Partial Classes\Utilizadores.cs" />
@@ -358,6 +359,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>

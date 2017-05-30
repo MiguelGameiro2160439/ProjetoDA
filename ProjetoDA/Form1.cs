@@ -54,10 +54,6 @@ namespace ProjetoDA
             newTournament.Name = "Colombus";
             newTournament.Date = new DateTime(2017, 05, 16);
             newTournament.Description = "Torneio mundial";
-            
-            User newUser = new User();
-            newUser.Username = "Alexp23";
-            newUser.Password = "12345";
 
             Referee newReferee = new Referee();
             newReferee.Name = "Alex";
@@ -83,7 +79,6 @@ namespace ProjetoDA
             mcontainer.GameSet.Add(newGame);*/
             mcontainer.UserSet.Add(newAdmin);
             mcontainer.UserSet.Add(newReferee);
-            mcontainer.UserSet.Add(newUser);
             mcontainer.TournamentSet.Add(newTournament);
             mcontainer.DeckSet.Add(newDeck);
             mcontainer.TeamSet.Add(newTeam);

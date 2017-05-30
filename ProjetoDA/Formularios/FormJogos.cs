@@ -27,6 +27,7 @@ namespace ProjetoDA
                 comboBoxEquipa1.Items.AddRange(container.TeamSet.ToArray());
                 comboBoxEquipa2.Items.AddRange(container.TeamSet.ToArray());
                 comboBoxTorneio.Items.AddRange(container.TournamentSet.OfType<TeamTournament>().ToArray());
+                comboBoxArbitro.Items.AddRange(container.UserSet.OfType<Referee>().ToArray());
 
             }
         }
@@ -38,6 +39,7 @@ namespace ProjetoDA
             Team equipa1 = null;
             Team equipa2 = null;
             TeamTournament torneio = null;
+            Referee arbitro = null;
 
 
             if (comboBoxBaralho1.SelectedIndex > -1)
@@ -65,27 +67,26 @@ namespace ProjetoDA
                 torneio = (TeamTournament)comboBoxTorneio.SelectedItem;
             }
 
+            if (comboBoxArbitro.SelectedIndex > -1)
+            {
+                arbitro = (Referee)comboBoxArbitro.SelectedItem;
+            }
+
             NovoJogoEquipa = new TeamGame();
-            try
-            {
-                NovoJogoEquipa.Number = (int)numericUpDownNum.Value;
-                NovoJogoEquipa.Date = dateTimePickerData.Value;
-                NovoJogoEquipa.Description = textBoxDescricao.Text.Trim();
-                NovoJogoEquipa.DeckOne = baralho1;
-                NovoJogoEquipa.DeckTwo = baralho2;
-                NovoJogoEquipa.TeamOne = equipa1;
-                NovoJogoEquipa.TeamTwo = equipa2;
-                NovoJogoEquipa.Tournament = torneio;
+
+            NovoJogoEquipa.Number = (int)numericUpDownNum.Value;
+            NovoJogoEquipa.Date = dateTimePickerData.Value;
+            NovoJogoEquipa.Description = textBoxDescricao.Text.Trim();
+            NovoJogoEquipa.DeckOne = baralho1;
+            NovoJogoEquipa.DeckTwo = baralho2;
+            NovoJogoEquipa.TeamOne = equipa1;
+            NovoJogoEquipa.TeamTwo = equipa2;
+            NovoJogoEquipa.Tournament = torneio;
+            NovoJogoEquipa.Referee = arbitro;
 
 
-                DialogResult = DialogResult.OK;
-                Close();
-            }
-            catch
-            {
-                MessageBox.Show("Todos os campos com * são obrigatórios");
-            }
-          
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }
