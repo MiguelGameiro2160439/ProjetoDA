@@ -92,5 +92,11 @@ namespace ProjetoDA
         {
             equipaSelecionada = (Team)listBoxEquipas.SelectedItem;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormAddJogadoresEquipa newForm = new FormAddJogadoresEquipa();
+            newForm.ShowDialog();
+        }
     }
 }

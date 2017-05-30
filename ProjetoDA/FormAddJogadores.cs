@@ -49,30 +49,12 @@ namespace ProjetoDA
                 }
                 else
                 {
-                    MessageBox.Show("Seleccione um jogador");
+                    MessageBox.Show("Seleccione uma carta");
                 }
             }
             else
             {
-                MessageBox.Show("Seleccione um torneio");
-            }
-        }
-
-        private void buttonRemover_Click(object sender, EventArgs e)
-        {
-            if (listBoxTorneio.SelectedIndex >= 0)
-            {
-                if (listBoxJogadoresTorneio.SelectedIndex >= 0)
-                {
-                    torneioNomralSelecionado = (StandardTournament)listBoxTorneio.SelectedItem;
-                    jogadorSelecionado = (Player)listBoxJogadoresTorneio.SelectedItem;
-
-                    torneioNomralSelecionado.Tournaments.Remove(jogadorSelecionado);
-                    container.SaveChanges();
-
-                    listBoxJogadoresTorneio.Items.Clear();
-                    listBoxJogadoresTorneio.Items.AddRange(torneioNomralSelecionado.Tournaments.ToArray());
-                }
+                MessageBox.Show("Seleccione um baralho");
             }
         }
     }

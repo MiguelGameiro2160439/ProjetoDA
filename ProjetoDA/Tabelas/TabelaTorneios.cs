@@ -172,7 +172,7 @@ namespace ProjetoDA
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FormAddJogadores newForm = new FormAddJogadores();
+            FormAddCartas newForm = new FormAddCartas();
             newForm.ShowDialog();
         }
     }

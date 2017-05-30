@@ -24,6 +24,9 @@ namespace ProjetoDA
             {
                 comboBoxBaralho1.Items.AddRange(container.DeckSet.ToArray());
                 comboBoxBaralho2.Items.AddRange(container.DeckSet.ToArray());
+                comboBoxEquipa1.Items.AddRange(container.TeamSet.ToArray());
+                comboBoxEquipa2.Items.AddRange(container.TeamSet.ToArray());
+                comboBoxTorneio.Items.AddRange(container.TournamentSet.OfType<TeamTournament>().ToArray());
 
             }
         }
@@ -32,6 +35,9 @@ namespace ProjetoDA
         {
             Deck baralho1 = null;
             Deck baralho2 = null;
+            Team equipa1 = null;
+            Team equipa2 = null;
+            TeamTournament torneio = null;
 
 
             if (comboBoxBaralho1.SelectedIndex > -1)
@@ -44,6 +50,21 @@ namespace ProjetoDA
                 baralho2 = (Deck)comboBoxBaralho2.SelectedItem;
             }
 
+            if (comboBoxBaralho2.SelectedIndex > -1)
+            {
+                equipa1 = (Team)comboBoxEquipa1.SelectedItem;
+            }
+
+            if (comboBoxBaralho2.SelectedIndex > -1)
+            {
+                equipa2 = (Team)comboBoxEquipa2.SelectedItem;
+            }
+
+            if (comboBoxTorneio.SelectedIndex > -1)
+            {
+                torneio = (TeamTournament)comboBoxTorneio.SelectedItem;
+            }
+
             NovoJogoEquipa = new TeamGame();
 
             NovoJogoEquipa.Number = (int)numericUpDownNum.Value;
@@ -51,6 +72,9 @@ namespace ProjetoDA
             NovoJogoEquipa.Description = textBoxDescricao.Text.Trim();
             NovoJogoEquipa.DeckOne = baralho1;
             NovoJogoEquipa.DeckTwo = baralho2;
+            NovoJogoEquipa.TeamOne = equipa1;
+            NovoJogoEquipa.TeamTwo = equipa2;
+            NovoJogoEquipa.Tournament = torneio;
 
 
             DialogResult = DialogResult.OK;

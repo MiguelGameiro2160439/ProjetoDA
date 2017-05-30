@@ -24,6 +24,10 @@ namespace ProjetoDA
             {
                 comboBoxBaralho1.Items.AddRange(container.DeckSet.ToArray());
                 comboBoxBaralho2.Items.AddRange(container.DeckSet.ToArray());
+                comboBoxJogador1.Items.AddRange(container.PlayerSet.ToArray());
+                comboBoxJogador2.Items.AddRange(container.PlayerSet.ToArray());
+                comboBoxTorneio.Items.AddRange(container.TournamentSet.OfType<StandardTournament>().ToArray());
+               
 
             }
         }
@@ -32,7 +36,9 @@ namespace ProjetoDA
         {
             Deck baralho1 = null;
             Deck baralho2 = null;
-
+            Player jogador1 = null;
+            Player jogador2 = null;
+            StandardTournament torneio = null;
 
             if (comboBoxBaralho1.SelectedIndex > -1)
             {
@@ -44,6 +50,20 @@ namespace ProjetoDA
                 baralho2 = (Deck)comboBoxBaralho2.SelectedItem;
             }
 
+            if (comboBoxJogador1.SelectedIndex > -1)
+            {
+                jogador1 = (Player)comboBoxJogador1.SelectedItem;
+            }
+
+            if (comboBoxJogador2.SelectedIndex > -1)
+            {
+                jogador2 = (Player)comboBoxJogador2.SelectedItem;
+            }
+
+            if (comboBoxTorneio.SelectedIndex > -1)
+            {
+                torneio = (StandardTournament)comboBoxTorneio.SelectedItem;
+            }
             NovoJogoNormal = new StandardGame();
 
             NovoJogoNormal.Number = (int)numericUpDownNum.Value;
@@ -51,10 +71,17 @@ namespace ProjetoDA
             NovoJogoNormal.Description = textBoxDescricao.Text.Trim();
             NovoJogoNormal.DeckOne = baralho1;
             NovoJogoNormal.DeckTwo = baralho2;
-
+            NovoJogoNormal.PlayerOne = jogador1;
+            NovoJogoNormal.PlayerTwo = jogador2;
+            NovoJogoNormal.Tournament = torneio;
 
             DialogResult = DialogResult.OK;
             Close();
+        }
+
+        private void FormJogoNormal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
