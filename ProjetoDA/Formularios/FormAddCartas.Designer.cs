@@ -43,7 +43,7 @@
             // 
             this.listBoxBaralho.FormattingEnabled = true;
             this.listBoxBaralho.Location = new System.Drawing.Point(213, 29);
-            this.listBoxBaralho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxBaralho.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxBaralho.Name = "listBoxBaralho";
             this.listBoxBaralho.Size = new System.Drawing.Size(201, 290);
             this.listBoxBaralho.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             this.listBoxCartas.FormattingEnabled = true;
             this.listBoxCartas.Location = new System.Drawing.Point(9, 29);
-            this.listBoxCartas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxCartas.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxCartas.Name = "listBoxCartas";
             this.listBoxCartas.Size = new System.Drawing.Size(201, 290);
             this.listBoxCartas.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.listBoxCartasBaralho.FormattingEnabled = true;
             this.listBoxCartasBaralho.Location = new System.Drawing.Point(418, 29);
-            this.listBoxCartasBaralho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxCartasBaralho.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxCartasBaralho.Name = "listBoxCartasBaralho";
             this.listBoxCartasBaralho.Size = new System.Drawing.Size(191, 290);
             this.listBoxCartasBaralho.TabIndex = 2;
@@ -69,7 +69,7 @@
             // buttonInserir
             // 
             this.buttonInserir.Location = new System.Drawing.Point(146, 349);
-            this.buttonInserir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonInserir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonInserir.Name = "buttonInserir";
             this.buttonInserir.Size = new System.Drawing.Size(83, 41);
             this.buttonInserir.TabIndex = 3;
@@ -80,7 +80,7 @@
             // buttonRemover
             // 
             this.buttonRemover.Location = new System.Drawing.Point(272, 349);
-            this.buttonRemover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonRemover.Margin = new System.Windows.Forms.Padding(2);
             this.buttonRemover.Name = "buttonRemover";
             this.buttonRemover.Size = new System.Drawing.Size(83, 41);
             this.buttonRemover.TabIndex = 4;
@@ -91,11 +91,11 @@
             // buttonSelect
             // 
             this.buttonSelect.Location = new System.Drawing.Point(396, 349);
-            this.buttonSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSelect.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSelect.Name = "buttonSelect";
             this.buttonSelect.Size = new System.Drawing.Size(83, 41);
             this.buttonSelect.TabIndex = 5;
-            this.buttonSelect.Text = "Selecionar";
+            this.buttonSelect.Text = "Atualizar Lista";
             this.buttonSelect.UseVisualStyleBackColor = true;
             this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
             // 
@@ -140,7 +140,7 @@
             this.Controls.Add(this.listBoxCartasBaralho);
             this.Controls.Add(this.listBoxCartas);
             this.Controls.Add(this.listBoxBaralho);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormAddCartas";
             this.ResumeLayout(false);
             this.PerformLayout();
