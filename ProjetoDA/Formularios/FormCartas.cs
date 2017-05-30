@@ -25,17 +25,26 @@ namespace ProjetoDA
         {
             NovaCarta = new Card();
 
-            NovaCarta.Name = textBoxNome.Text.Trim();
-            NovaCarta.Faction = comboBoxFacao.SelectedItem.ToString();
-            NovaCarta.Type = comboBoxTipo.SelectedItem.ToString();
-            NovaCarta.Cost = textBoxCusto.Text.Trim();
-            NovaCarta.Loyalty = (int)numericUpDownLealdade.Value;
-            NovaCarta.RuleText = textBoxRegras.Text.Trim();
-            NovaCarta.Attack = (int)numericUpDownAtaque.Value;
-            NovaCarta.Defense = (int)numericUpDownDefesa.Value;
+            try
+            {
+                NovaCarta.Name = textBoxNome.Text.Trim();
+                NovaCarta.Faction = comboBoxFacao.SelectedItem.ToString();
+                NovaCarta.Type = comboBoxTipo.SelectedItem.ToString();
+                NovaCarta.Cost = textBoxCusto.Text.Trim();
+                NovaCarta.Loyalty = (int)numericUpDownLealdade.Value;
+                NovaCarta.RuleText = textBoxRegras.Text.Trim();
+                NovaCarta.Attack = (int)numericUpDownAtaque.Value;
+                NovaCarta.Defense = (int)numericUpDownDefesa.Value;
 
-            DialogResult = DialogResult.OK;
-            Close();
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+            catch
+            {
+                MessageBox.Show("Todos os campos com * são obrigatórios");
+            }
+
+           
         }
     }
 }

@@ -66,17 +66,26 @@ namespace ProjetoDA
             }
             NovoJogoNormal = new StandardGame();
 
-            NovoJogoNormal.Number = (int)numericUpDownNum.Value;
-            NovoJogoNormal.Date = dateTimePickerData.Value;
-            NovoJogoNormal.Description = textBoxDescricao.Text.Trim();
-            NovoJogoNormal.DeckOne = baralho1;
-            NovoJogoNormal.DeckTwo = baralho2;
-            NovoJogoNormal.PlayerOne = jogador1;
-            NovoJogoNormal.PlayerTwo = jogador2;
-            NovoJogoNormal.Tournament = torneio;
+            try
+            {
+                NovoJogoNormal.Number = (int)numericUpDownNum.Value;
+                NovoJogoNormal.Date = dateTimePickerData.Value;
+                NovoJogoNormal.Description = textBoxDescricao.Text.Trim();
+                NovoJogoNormal.DeckOne = baralho1;
+                NovoJogoNormal.DeckTwo = baralho2;
+                NovoJogoNormal.PlayerOne = jogador1;
+                NovoJogoNormal.PlayerTwo = jogador2;
+                NovoJogoNormal.Tournament = torneio;
 
-            DialogResult = DialogResult.OK;
-            Close();
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+            catch
+            {
+                MessageBox.Show("Todos os campos com * são obrigatórios");
+            }
+
+            
         }
 
         private void FormJogoNormal_Load(object sender, EventArgs e)

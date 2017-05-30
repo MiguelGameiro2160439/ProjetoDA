@@ -63,5 +63,7 @@ namespace ProjetoDA
                 comboBoxBaralho2.SelectedItem = gameSelected.DeckTwo;
             }
         }
+
+       
     }
 }

@@ -126,8 +126,8 @@ namespace ProjetoDA
 
             container.SaveChanges();
 
-            listBoxJogos.Items.Clear();
-            listBoxJogos.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
+            listBoxJogosStandard.Items.Clear();
+            listBoxJogosStandard.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
         }
 
         private void listBoxJogosStandard_SelectedIndexChanged(object sender, EventArgs e)

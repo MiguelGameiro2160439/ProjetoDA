@@ -43,7 +43,7 @@ namespace ProjetoDA
                     }
                     else
                     {
-                        MessageBox.Show("Não pode adicionar mais d 2 jogadores a uma equipa");
+                        MessageBox.Show("Não pode adicionar mais de 2 jogadores a uma equipa");
                     }
                 }
                 else
@@ -82,6 +82,13 @@ namespace ProjetoDA
                     listBoxJogadoresEquipas.Items.AddRange(equipaSelecionada.Players.ToArray());
                 }
             }
+        }
+
+        private void buttonSelect_Click(object sender, EventArgs e)
+        {
+            equipaSelecionada = (Team)listBoxEquipas.SelectedItem;
+            listBoxJogadoresEquipas.Items.Clear();
+            listBoxJogadoresEquipas.Items.AddRange(equipaSelecionada.Players.ToArray());
         }
     }
 }

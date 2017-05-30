@@ -71,9 +71,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Fação";
+            this.label2.Text = "Fação*";
             // 
             // label3
             // 
@@ -134,9 +134,9 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(15, 69);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 13);
+            this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Tipo";
+            this.label7.Text = "Tipo*";
             // 
             // label8
             // 
@@ -184,7 +184,7 @@
             // 
             this.numericUpDownLealdade.Location = new System.Drawing.Point(290, 40);
             this.numericUpDownLealdade.Name = "numericUpDownLealdade";
-            this.numericUpDownLealdade.Size = new System.Drawing.Size(64, 20);
+            this.numericUpDownLealdade.Size = new System.Drawing.Size(70, 20);
             this.numericUpDownLealdade.TabIndex = 19;
             // 
             // numericUpDownDefesa

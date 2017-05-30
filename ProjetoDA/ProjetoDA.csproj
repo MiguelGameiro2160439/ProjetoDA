@@ -106,16 +106,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddJogadores.cs">
+    <Compile Include="Formularios\FormAddJogadores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddJogadores.Designer.cs">
+    <Compile Include="Formularios\FormAddJogadores.Designer.cs">
       <DependentUpon>FormAddJogadores.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormAddJogadoresEquipa.cs">
+    <Compile Include="Formularios\FormAddJogadoresEquipa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAddJogadoresEquipa.Designer.cs">
+    <Compile Include="Formularios\FormAddJogadoresEquipa.Designer.cs">
       <DependentUpon>FormAddJogadoresEquipa.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormTorneioNormal.cs">
@@ -288,10 +288,10 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddJogadores.resx">
+    <EmbeddedResource Include="Formularios\FormAddJogadores.resx">
       <DependentUpon>FormAddJogadores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAddJogadoresEquipa.resx">
+    <EmbeddedResource Include="Formularios\FormAddJogadoresEquipa.resx">
       <DependentUpon>FormAddJogadoresEquipa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormTorneioNormal.resx">

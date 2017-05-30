@@ -21,7 +21,7 @@ namespace ProjetoDA
         {
             LoginAdministrador newform = new LoginAdministrador();
             newform.ShowDialog();
-
+            
         }
 
         private void buttonArbitro_Click(object sender, EventArgs e)

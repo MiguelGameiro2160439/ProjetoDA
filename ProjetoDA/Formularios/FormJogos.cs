@@ -66,19 +66,26 @@ namespace ProjetoDA
             }
 
             NovoJogoEquipa = new TeamGame();
+            try
+            {
+                NovoJogoEquipa.Number = (int)numericUpDownNum.Value;
+                NovoJogoEquipa.Date = dateTimePickerData.Value;
+                NovoJogoEquipa.Description = textBoxDescricao.Text.Trim();
+                NovoJogoEquipa.DeckOne = baralho1;
+                NovoJogoEquipa.DeckTwo = baralho2;
+                NovoJogoEquipa.TeamOne = equipa1;
+                NovoJogoEquipa.TeamTwo = equipa2;
+                NovoJogoEquipa.Tournament = torneio;
 
-            NovoJogoEquipa.Number = (int)numericUpDownNum.Value;
-            NovoJogoEquipa.Date = dateTimePickerData.Value;
-            NovoJogoEquipa.Description = textBoxDescricao.Text.Trim();
-            NovoJogoEquipa.DeckOne = baralho1;
-            NovoJogoEquipa.DeckTwo = baralho2;
-            NovoJogoEquipa.TeamOne = equipa1;
-            NovoJogoEquipa.TeamTwo = equipa2;
-            NovoJogoEquipa.Tournament = torneio;
 
-
-            DialogResult = DialogResult.OK;
-            Close();
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+            catch
+            {
+                MessageBox.Show("Todos os campos com * são obrigatórios");
+            }
+          
         }
     }
 }

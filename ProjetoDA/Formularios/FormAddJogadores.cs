@@ -13,7 +13,7 @@ namespace ProjetoDA
     public partial class FormAddJogadores : Form
     {
         private Model1Container container;
-        private StandardTournament torneioNomralSelecionado;
+        private StandardTournament torneioNormalSelecionado;
         private Player jogadorSelecionado;
 
         public FormAddJogadores()
@@ -38,14 +38,14 @@ namespace ProjetoDA
             {
                 if (listBoxJogadores.SelectedIndex >= 0)
                 {
-                    torneioNomralSelecionado = (StandardTournament)listBoxTorneio.SelectedItem;
+                    torneioNormalSelecionado = (StandardTournament)listBoxTorneio.SelectedItem;
                     jogadorSelecionado = (Player)listBoxJogadores.SelectedItem;
 
-                    torneioNomralSelecionado.Tournaments.Add(jogadorSelecionado);
+                    torneioNormalSelecionado.Tournaments.Add(jogadorSelecionado);
                     container.SaveChanges();
 
                     listBoxJogadoresTorneio.Items.Clear();
-                    listBoxJogadoresTorneio.Items.AddRange(torneioNomralSelecionado.Tournaments.ToArray());
+                    listBoxJogadoresTorneio.Items.AddRange(torneioNormalSelecionado.Tournaments.ToArray());
                 }
                 else
                 {
@@ -56,6 +56,13 @@ namespace ProjetoDA
             {
                 MessageBox.Show("Seleccione um baralho");
             }
+        }
+
+        private void buttonSelect_Click(object sender, EventArgs e)
+        {
+            torneioNormalSelecionado = (StandardTournament)listBoxTorneio.SelectedItem;
+            listBoxJogadoresTorneio.Items.Clear();
+            listBoxJogadoresTorneio.Items.AddRange(torneioNormalSelecionado.Tournaments.ToArray());
         }
     }
 }
