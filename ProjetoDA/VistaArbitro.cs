@@ -39,7 +39,7 @@ namespace ProjetoDA
         private void atualizarLista()
         {
             listBoxJogos.Items.Clear();
-            listBoxJogos.Items.AddRange(arbitroSelected.Games.ToArray());
+            //listBoxJogos.Items.AddRange(arbitroSelected.Games.ToArray());
         }
 
         private void limparCampos()
