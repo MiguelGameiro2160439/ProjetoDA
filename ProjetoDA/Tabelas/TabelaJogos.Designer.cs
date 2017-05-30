@@ -36,14 +36,16 @@
             this.buttonAdicionarStandard = new System.Windows.Forms.Button();
             this.buttonEditarStandard = new System.Windows.Forms.Button();
             this.buttonRemoverJogoNormal = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBoxJogos
             // 
             this.listBoxJogos.FormattingEnabled = true;
-            this.listBoxJogos.Location = new System.Drawing.Point(12, 12);
+            this.listBoxJogos.Location = new System.Drawing.Point(12, 25);
             this.listBoxJogos.Name = "listBoxJogos";
-            this.listBoxJogos.Size = new System.Drawing.Size(162, 134);
+            this.listBoxJogos.Size = new System.Drawing.Size(162, 121);
             this.listBoxJogos.TabIndex = 0;
             this.listBoxJogos.SelectedIndexChanged += new System.EventHandler(this.listBoxJogos_SelectedIndexChanged);
             // 
@@ -80,9 +82,9 @@
             // listBoxJogosStandard
             // 
             this.listBoxJogosStandard.FormattingEnabled = true;
-            this.listBoxJogosStandard.Location = new System.Drawing.Point(220, 12);
+            this.listBoxJogosStandard.Location = new System.Drawing.Point(220, 25);
             this.listBoxJogosStandard.Name = "listBoxJogosStandard";
-            this.listBoxJogosStandard.Size = new System.Drawing.Size(157, 134);
+            this.listBoxJogosStandard.Size = new System.Drawing.Size(157, 121);
             this.listBoxJogosStandard.TabIndex = 4;
             this.listBoxJogosStandard.SelectedIndexChanged += new System.EventHandler(this.listBoxJogosStandard_SelectedIndexChanged);
             // 
@@ -116,11 +118,31 @@
             this.buttonRemoverJogoNormal.UseVisualStyleBackColor = true;
             this.buttonRemoverJogoNormal.Click += new System.EventHandler(this.buttonRemoverJogoNormal_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(30, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Jogo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(220, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Jogos Standard";
+            // 
             // TabelaJogos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(389, 261);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonRemoverJogoNormal);
             this.Controls.Add(this.buttonEditarStandard);
             this.Controls.Add(this.buttonAdicionarStandard);
@@ -132,6 +154,7 @@
             this.Name = "TabelaJogos";
             this.Text = "TabelaJogos";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -145,5 +168,7 @@
         private System.Windows.Forms.Button buttonAdicionarStandard;
         private System.Windows.Forms.Button buttonEditarStandard;
         private System.Windows.Forms.Button buttonRemoverJogoNormal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
