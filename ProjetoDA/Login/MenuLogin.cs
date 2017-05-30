@@ -17,6 +17,7 @@ namespace ProjetoDA
             InitializeComponent();
         }
 
+        //Devolve a vista para o login do admin.
         private void buttonAdministrador_Click(object sender, EventArgs e)
         {
             LoginAdministrador newform = new LoginAdministrador();
@@ -24,6 +25,7 @@ namespace ProjetoDA
             
         }
 
+        //Devolve a vista para o login do arbitro.
         private void buttonArbitro_Click(object sender, EventArgs e)
         {
             LoginArbitro newform = new LoginArbitro();

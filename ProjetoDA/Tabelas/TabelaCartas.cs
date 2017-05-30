@@ -24,6 +24,7 @@ namespace ProjetoDA
             refreshListaCards();
         }
 
+        //Mostra a vista e recebe os dados do form cartas.
         private void buttonAdicionarCarta_Click(object sender, EventArgs e)
         {
             FormCartas form = new FormCartas();
@@ -34,7 +35,7 @@ namespace ProjetoDA
                 AdicionarCarta(form.NovaCarta);
             }
         }
-
+        //Guarda a nova carta na base de dados.
         private void AdicionarCarta(Card carta)
         {
             container.CardSet.Add(carta);
@@ -42,12 +43,14 @@ namespace ProjetoDA
             refreshListaCards();
         }
 
+        //Atualiza a lista de cartas.
         private void refreshListaCards()
         {
             listBoxCartas.Items.Clear();
             listBoxCartas.Items.AddRange(container.CardSet.ToArray());
         }
 
+        //Remove a carta selecionada.
         private void buttonRemover_Click(object sender, EventArgs e)
         {
             cartaSelecionada = (Card)listBoxCartas.SelectedItem;
@@ -65,6 +68,7 @@ namespace ProjetoDA
             cartaSelecionada = (Card)listBoxCartas.SelectedItem;
         }
 
+        //Edita a carta selecionada.
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             cartaSelecionada = (Card)listBoxCartas.SelectedItem;

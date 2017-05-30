@@ -45,17 +45,20 @@
             // listBoxTorneios
             // 
             this.listBoxTorneios.FormattingEnabled = true;
-            this.listBoxTorneios.Location = new System.Drawing.Point(12, 25);
+            this.listBoxTorneios.ItemHeight = 16;
+            this.listBoxTorneios.Location = new System.Drawing.Point(16, 31);
+            this.listBoxTorneios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxTorneios.Name = "listBoxTorneios";
-            this.listBoxTorneios.Size = new System.Drawing.Size(153, 160);
+            this.listBoxTorneios.Size = new System.Drawing.Size(203, 196);
             this.listBoxTorneios.TabIndex = 0;
             this.listBoxTorneios.SelectedIndexChanged += new System.EventHandler(this.listBoxTorneios_SelectedIndexChanged);
             // 
             // buttonAdicionar
             // 
-            this.buttonAdicionar.Location = new System.Drawing.Point(12, 191);
+            this.buttonAdicionar.Location = new System.Drawing.Point(16, 235);
+            this.buttonAdicionar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdicionar.Name = "buttonAdicionar";
-            this.buttonAdicionar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdicionar.Size = new System.Drawing.Size(100, 28);
             this.buttonAdicionar.TabIndex = 1;
             this.buttonAdicionar.Text = "Inserir";
             this.buttonAdicionar.UseVisualStyleBackColor = true;
@@ -63,9 +66,10 @@
             // 
             // buttonEditar
             // 
-            this.buttonEditar.Location = new System.Drawing.Point(90, 191);
+            this.buttonEditar.Location = new System.Drawing.Point(120, 235);
+            this.buttonEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditar.Size = new System.Drawing.Size(100, 28);
             this.buttonEditar.TabIndex = 2;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
@@ -73,9 +77,10 @@
             // 
             // buttonEliminar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(90, 220);
+            this.buttonEliminar.Location = new System.Drawing.Point(120, 271);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(75, 23);
+            this.buttonEliminar.Size = new System.Drawing.Size(100, 28);
             this.buttonEliminar.TabIndex = 3;
             this.buttonEliminar.Text = "Remover";
             this.buttonEliminar.UseVisualStyleBackColor = true;
@@ -84,17 +89,20 @@
             // listBoxTorneioNormal
             // 
             this.listBoxTorneioNormal.FormattingEnabled = true;
-            this.listBoxTorneioNormal.Location = new System.Drawing.Point(229, 25);
+            this.listBoxTorneioNormal.ItemHeight = 16;
+            this.listBoxTorneioNormal.Location = new System.Drawing.Point(305, 31);
+            this.listBoxTorneioNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxTorneioNormal.Name = "listBoxTorneioNormal";
-            this.listBoxTorneioNormal.Size = new System.Drawing.Size(153, 160);
+            this.listBoxTorneioNormal.Size = new System.Drawing.Size(203, 196);
             this.listBoxTorneioNormal.TabIndex = 4;
             this.listBoxTorneioNormal.SelectedIndexChanged += new System.EventHandler(this.listBoxTorneioNormal_SelectedIndexChanged);
             // 
             // buttonEditarNormal
             // 
-            this.buttonEditarNormal.Location = new System.Drawing.Point(307, 191);
+            this.buttonEditarNormal.Location = new System.Drawing.Point(409, 235);
+            this.buttonEditarNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonEditarNormal.Name = "buttonEditarNormal";
-            this.buttonEditarNormal.Size = new System.Drawing.Size(75, 23);
+            this.buttonEditarNormal.Size = new System.Drawing.Size(100, 28);
             this.buttonEditarNormal.TabIndex = 5;
             this.buttonEditarNormal.Text = "Editar";
             this.buttonEditarNormal.UseVisualStyleBackColor = true;
@@ -102,9 +110,10 @@
             // 
             // buttonRemoverNormal
             // 
-            this.buttonRemoverNormal.Location = new System.Drawing.Point(229, 220);
+            this.buttonRemoverNormal.Location = new System.Drawing.Point(305, 271);
+            this.buttonRemoverNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonRemoverNormal.Name = "buttonRemoverNormal";
-            this.buttonRemoverNormal.Size = new System.Drawing.Size(75, 23);
+            this.buttonRemoverNormal.Size = new System.Drawing.Size(100, 28);
             this.buttonRemoverNormal.TabIndex = 6;
             this.buttonRemoverNormal.Text = "Remover";
             this.buttonRemoverNormal.UseVisualStyleBackColor = true;
@@ -112,9 +121,10 @@
             // 
             // buttonAdicionarNormal
             // 
-            this.buttonAdicionarNormal.Location = new System.Drawing.Point(229, 191);
+            this.buttonAdicionarNormal.Location = new System.Drawing.Point(305, 235);
+            this.buttonAdicionarNormal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonAdicionarNormal.Name = "buttonAdicionarNormal";
-            this.buttonAdicionarNormal.Size = new System.Drawing.Size(75, 23);
+            this.buttonAdicionarNormal.Size = new System.Drawing.Size(100, 28);
             this.buttonAdicionarNormal.TabIndex = 7;
             this.buttonAdicionarNormal.Text = "Inserir";
             this.buttonAdicionarNormal.UseVisualStyleBackColor = true;
@@ -122,19 +132,21 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 220);
+            this.button1.Location = new System.Drawing.Point(16, 271);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 39);
+            this.button1.Size = new System.Drawing.Size(100, 48);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Adicionar Jogadores";
+            this.button1.Text = "Adicionar Equipas";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(310, 220);
+            this.button2.Location = new System.Drawing.Point(413, 271);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 39);
+            this.button2.Size = new System.Drawing.Size(96, 48);
             this.button2.TabIndex = 9;
             this.button2.Text = "Adicionar Jogadores";
             this.button2.UseVisualStyleBackColor = true;
@@ -143,26 +155,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 6);
+            this.label1.Location = new System.Drawing.Point(17, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Torneios";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 6);
+            this.label2.Location = new System.Drawing.Point(305, 7);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.Size = new System.Drawing.Size(106, 17);
             this.label2.TabIndex = 11;
             this.label2.Text = "Torneio Normal";
             // 
             // TabelaTorneios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 290);
+            this.ClientSize = new System.Drawing.Size(529, 357);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -175,6 +189,7 @@
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonAdicionar);
             this.Controls.Add(this.listBoxTorneios);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TabelaTorneios";
             this.Text = "TabelaTorneios";
             this.ResumeLayout(false);

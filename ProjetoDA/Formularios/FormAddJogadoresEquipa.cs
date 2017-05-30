@@ -23,6 +23,7 @@ namespace ProjetoDA
             refreshList();
         }
 
+        //Adiciona o maximo de dois jogadores à equipa.
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             if (listBoxEquipas.SelectedIndex >= 0)
@@ -57,6 +58,7 @@ namespace ProjetoDA
             }
         }
 
+        //Atualiza as listBoxs.
         private void refreshList()
         {
             listBoxJogadores.Items.Clear();
@@ -66,6 +68,7 @@ namespace ProjetoDA
             listBoxEquipas.Items.AddRange(container.TeamSet.ToArray());
         }
 
+        //Remove jogadores à equipa selecionada.
         private void buttonRemover_Click(object sender, EventArgs e)
         {
             if (listBoxEquipas.SelectedIndex >= 0)
@@ -84,6 +87,7 @@ namespace ProjetoDA
             }
         }
 
+        //Atualiza a lista de jogadores pertencentes à equipa selecionada.
         private void buttonSelect_Click(object sender, EventArgs e)
         {
             equipaSelecionada = (Team)listBoxEquipas.SelectedItem;

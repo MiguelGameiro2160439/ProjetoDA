@@ -21,6 +21,7 @@ namespace ProjetoDA
             InitializeComponent();
         }
 
+        //Envia os dados para a tabela cartas para posterior save na base de dados. 
         private void buttonOK_Click(object sender, EventArgs e)
         {
             NovaCarta = new Card();

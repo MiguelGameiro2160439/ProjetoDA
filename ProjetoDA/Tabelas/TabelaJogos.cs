@@ -26,6 +26,7 @@ namespace ProjetoDA
             refreshListajogoNormal();
         }
 
+        //Mostra a vista e recebe os dados do form jogo equipa.
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
             FormJogos form = new FormJogos(this.container);
@@ -37,18 +38,21 @@ namespace ProjetoDA
             }
         }
 
+        //Atualiza a lista de jogos de equipa.
         private void refreshListajogoEquipa()
         {
             listBoxJogos.Items.Clear();
             listBoxJogos.Items.AddRange(container.GameSet.OfType<TeamGame>().ToArray());
         }
 
+        //Atualiza a lista de jogos standart.
         private void refreshListajogoNormal()
         {
             listBoxJogosStandard.Items.Clear();
             listBoxJogosStandard.Items.AddRange(container.GameSet.OfType<StandardGame>().ToArray());
         }
 
+        //Guarda o jogo de equipa na base de dados.
         private void AdicionarJogoEquipa(TeamGame jogoEquipa)
         {
             container.GameSet.Add(jogoEquipa);
@@ -56,6 +60,7 @@ namespace ProjetoDA
             refreshListajogoEquipa();
         }
 
+        //Guarda o jogo standart na base de dados.
         private void AdicionarNormal(StandardGame jogoNormal)
         {
             container.GameSet.Add(jogoNormal);
@@ -63,6 +68,7 @@ namespace ProjetoDA
             refreshListajogoNormal();
         }
 
+        //Edita o jogo de equipa selecionado.
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             jogoEquipaSelecionado = (TeamGame)listBoxJogos.SelectedItem;
@@ -90,6 +96,7 @@ namespace ProjetoDA
             }
         }
 
+        //Remove o jogo de equipa selecionado.
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
             jogoEquipaSelecionado = (TeamGame)listBoxJogos.SelectedItem;
@@ -107,6 +114,7 @@ namespace ProjetoDA
             jogoEquipaSelecionado = (TeamGame)listBoxJogos.SelectedItem;
         }
 
+        //Mostra a vista e recebe os dados do form jogo normal.
         private void buttonAdicionarStandard_Click(object sender, EventArgs e)
         {
             FormJogoNormal form = new FormJogoNormal(this.container);
@@ -118,6 +126,7 @@ namespace ProjetoDA
             }
         }
 
+        //Remove o jogo normal selecionado.
         private void buttonRemoverJogoNormal_Click(object sender, EventArgs e)
         {
             jogoNomralSelecionado = (StandardGame)listBoxJogosStandard.SelectedItem;
@@ -135,6 +144,7 @@ namespace ProjetoDA
             jogoNomralSelecionado = (StandardGame)listBoxJogosStandard.SelectedItem;
         }
 
+        //Edita o jogo normal selecionado.
         private void buttonEditarStandard_Click(object sender, EventArgs e)
         {
             jogoNomralSelecionado = (StandardGame)listBoxJogosStandard.SelectedItem;

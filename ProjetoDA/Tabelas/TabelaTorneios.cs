@@ -26,6 +26,7 @@ namespace ProjetoDA
             refreshListaTorneioNormal();
         }
 
+        //Mostra a vista e recebe os dados do form torneios.
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
             FormTorneios form = new FormTorneios();
@@ -37,6 +38,7 @@ namespace ProjetoDA
             }
         }
 
+        //Guarda o torneio de equipas na base de dados.
         private void AdicionarTorneioEquipa(TeamTournament torneioEquipa)
         {
             container.TournamentSet.Add(torneioEquipa);
@@ -44,6 +46,7 @@ namespace ProjetoDA
             refreshListaTorneioEquipa();
         }
 
+        //Guarda o torneio normal na base de dados.
         private void AdicionarTorneioNormal(StandardTournament torneioNormal)
         {
             container.TournamentSet.Add(torneioNormal);
@@ -51,18 +54,21 @@ namespace ProjetoDA
             refreshListaTorneioNormal();
         }
 
+        //Atualiza a lista de torneios de equipas.
         private void refreshListaTorneioEquipa()
         {
             listBoxTorneios.Items.Clear();
             listBoxTorneios.Items.AddRange(container.TournamentSet.OfType<TeamTournament>().ToArray());
         }
 
+        //Atualiza a lista de torneios normais.
         private void refreshListaTorneioNormal()
         {
             listBoxTorneioNormal.Items.Clear();
             listBoxTorneioNormal.Items.AddRange(container.TournamentSet.OfType<StandardTournament>().ToArray());
         }
 
+        //Edita o torneio de equipa selecionado.
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             torneioEquipaSelecionado = (TeamTournament)listBoxTorneios.SelectedItem;
@@ -90,6 +96,7 @@ namespace ProjetoDA
             }
         }
 
+        //Remove o torneio de equipa selecionado.
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
             torneioEquipaSelecionado = (TeamTournament)listBoxTorneios.SelectedItem;
@@ -107,6 +114,7 @@ namespace ProjetoDA
             torneioEquipaSelecionado = (TeamTournament)listBoxTorneios.SelectedItem;
         }
 
+        //Mostra a vista e recebe os dados do form torneio normal.
         private void buttonAdicionarNormal_Click(object sender, EventArgs e)
         {
             FormTorneioNormal form = new FormTorneioNormal();
@@ -118,6 +126,7 @@ namespace ProjetoDA
             }
         }
 
+        //Edita o torneio normal selecionado.
         private void buttonEditarNormal_Click(object sender, EventArgs e)
         {
             torneioNormalSelecionado = (StandardTournament)listBoxTorneioNormal.SelectedItem;
@@ -145,6 +154,7 @@ namespace ProjetoDA
             }
         }
 
+        //Remove o torneio normal selecionado.
         private void buttonRemoverNormal_Click(object sender, EventArgs e)
         {
             {
@@ -164,15 +174,17 @@ namespace ProjetoDA
             torneioNormalSelecionado = (StandardTournament)listBoxTorneioNormal.SelectedItem;
         }
 
+        //Mostra o form para adicionar equipas ao torneio. 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormAddCartas newForm = new FormAddCartas();
+            FormAddEquipas newForm = new FormAddEquipas();
             newForm.ShowDialog();
         }
 
+        //Mostra o form para adicionar jogadores ao torneio.
         private void button2_Click(object sender, EventArgs e)
         {
-            FormAddCartas newForm = new FormAddCartas();
+            FormAddJogadores newForm = new FormAddJogadores();
             newForm.ShowDialog();
         }
     }

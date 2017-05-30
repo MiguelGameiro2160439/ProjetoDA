@@ -20,6 +20,7 @@ namespace ProjetoDA
             InitializeComponent();
         }
 
+        //Abre um fileDialog para adquirir o URL da imagem.
         private void buttonProcAvatar_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
@@ -32,6 +33,7 @@ namespace ProjetoDA
             openFileDialog1 = null;
         }
 
+        //Envia os dados para a tabela equipas para posterior save na base de dados. 
         private void buttonOK_Click(object sender, EventArgs e)
         {
             NovaEquipa = new Team();

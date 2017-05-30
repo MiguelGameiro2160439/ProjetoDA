@@ -35,6 +35,7 @@ namespace ProjetoDA
 
             try
             {
+                //Se os dados correspondem aos da base de dados então vai devolver a vista.
                 Administrator userSelecionado = utilizadores.First<Administrator>();
                 VistaAdmin newVista = new VistaAdmin();
                 newVista.ShowDialog();

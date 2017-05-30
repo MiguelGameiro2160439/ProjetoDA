@@ -19,6 +19,7 @@ namespace ProjetoDA
             InitializeComponent();
         }
 
+        //Envia os dados para a tabela torneios para posterior save na base de dados.
         private void buttonOK_Click(object sender, EventArgs e)
         {
             NovoTorneioNormal = new StandardTournament();

@@ -19,7 +19,7 @@ namespace ProjetoDA
         {
             InitializeComponent();
             this.container = container;
-
+            //Insere os dados nas varias comboBox.
             if (container != null)
             {
                 comboBoxBaralho1.Items.AddRange(container.DeckSet.ToArray());
@@ -32,6 +32,7 @@ namespace ProjetoDA
             }
         }
 
+        //Cria um jogo standart e envia os dados para a tabela jogos.
         private void buttonAdicionar_Click(object sender, EventArgs e)
         {
             Deck baralho1 = null;

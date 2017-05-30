@@ -17,12 +17,14 @@ namespace ProjetoDA
             InitializeComponent();
         }
 
+        //Mostra vista admin.
         private void buttonAdmin_Click(object sender, EventArgs e)
         {
             EditAdmin newEdit = new EditAdmin();
             newEdit.ShowDialog();
         }
 
+        //Mostra vista arbitro.
         private void buttonArbitro_Click(object sender, EventArgs e)
         {
             EditArbitro newEdit = new EditArbitro();

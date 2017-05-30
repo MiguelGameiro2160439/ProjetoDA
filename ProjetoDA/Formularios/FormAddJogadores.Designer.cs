@@ -42,10 +42,10 @@
             // 
             // buttonSelect
             // 
-            this.buttonSelect.Location = new System.Drawing.Point(419, 321);
-            this.buttonSelect.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSelect.Location = new System.Drawing.Point(559, 395);
+            this.buttonSelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(83, 41);
+            this.buttonSelect.Size = new System.Drawing.Size(111, 50);
             this.buttonSelect.TabIndex = 11;
             this.buttonSelect.Text = "Atualizar Lista";
             this.buttonSelect.UseVisualStyleBackColor = true;
@@ -53,20 +53,21 @@
             // 
             // buttonRemover
             // 
-            this.buttonRemover.Location = new System.Drawing.Point(275, 321);
-            this.buttonRemover.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonRemover.Location = new System.Drawing.Point(367, 395);
+            this.buttonRemover.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonRemover.Name = "buttonRemover";
-            this.buttonRemover.Size = new System.Drawing.Size(83, 41);
+            this.buttonRemover.Size = new System.Drawing.Size(111, 50);
             this.buttonRemover.TabIndex = 10;
             this.buttonRemover.Text = "Remover";
             this.buttonRemover.UseVisualStyleBackColor = true;
+            this.buttonRemover.Click += new System.EventHandler(this.buttonRemover_Click);
             // 
             // buttonInserir
             // 
-            this.buttonInserir.Location = new System.Drawing.Point(128, 321);
-            this.buttonInserir.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonInserir.Location = new System.Drawing.Point(171, 395);
+            this.buttonInserir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonInserir.Name = "buttonInserir";
-            this.buttonInserir.Size = new System.Drawing.Size(83, 41);
+            this.buttonInserir.Size = new System.Drawing.Size(111, 50);
             this.buttonInserir.TabIndex = 9;
             this.buttonInserir.Text = "Inserir";
             this.buttonInserir.UseVisualStyleBackColor = true;
@@ -75,62 +76,68 @@
             // listBoxJogadoresTorneio
             // 
             this.listBoxJogadoresTorneio.FormattingEnabled = true;
-            this.listBoxJogadoresTorneio.Location = new System.Drawing.Point(419, 37);
-            this.listBoxJogadoresTorneio.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxJogadoresTorneio.ItemHeight = 16;
+            this.listBoxJogadoresTorneio.Location = new System.Drawing.Point(559, 46);
+            this.listBoxJogadoresTorneio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxJogadoresTorneio.Name = "listBoxJogadoresTorneio";
-            this.listBoxJogadoresTorneio.Size = new System.Drawing.Size(191, 264);
+            this.listBoxJogadoresTorneio.Size = new System.Drawing.Size(253, 324);
             this.listBoxJogadoresTorneio.TabIndex = 8;
             // 
             // listBoxJogadores
             // 
             this.listBoxJogadores.FormattingEnabled = true;
-            this.listBoxJogadores.Location = new System.Drawing.Point(10, 37);
-            this.listBoxJogadores.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxJogadores.ItemHeight = 16;
+            this.listBoxJogadores.Location = new System.Drawing.Point(13, 46);
+            this.listBoxJogadores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxJogadores.Name = "listBoxJogadores";
-            this.listBoxJogadores.Size = new System.Drawing.Size(201, 264);
+            this.listBoxJogadores.Size = new System.Drawing.Size(267, 324);
             this.listBoxJogadores.TabIndex = 7;
             // 
             // listBoxTorneio
             // 
             this.listBoxTorneio.FormattingEnabled = true;
-            this.listBoxTorneio.Location = new System.Drawing.Point(215, 37);
-            this.listBoxTorneio.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxTorneio.ItemHeight = 16;
+            this.listBoxTorneio.Location = new System.Drawing.Point(287, 46);
+            this.listBoxTorneio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listBoxTorneio.Name = "listBoxTorneio";
-            this.listBoxTorneio.Size = new System.Drawing.Size(201, 264);
+            this.listBoxTorneio.Size = new System.Drawing.Size(267, 324);
             this.listBoxTorneio.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 19);
+            this.label1.Location = new System.Drawing.Point(115, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(75, 17);
             this.label1.TabIndex = 12;
             this.label1.Text = "Jogadores";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(294, 19);
+            this.label2.Location = new System.Drawing.Point(392, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 13;
             this.label2.Text = "Torneio";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(467, 19);
+            this.label3.Location = new System.Drawing.Point(623, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.Size = new System.Drawing.Size(129, 17);
             this.label3.TabIndex = 14;
             this.label3.Text = "Jogadores-Torneio";
             // 
             // FormAddJogadores
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 385);
+            this.ClientSize = new System.Drawing.Size(824, 474);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -140,6 +147,7 @@
             this.Controls.Add(this.listBoxJogadoresTorneio);
             this.Controls.Add(this.listBoxJogadores);
             this.Controls.Add(this.listBoxTorneio);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAddJogadores";
             this.Text = "FormAddJogadores";
             this.ResumeLayout(false);

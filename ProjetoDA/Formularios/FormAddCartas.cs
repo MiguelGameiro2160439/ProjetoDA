@@ -24,6 +24,7 @@ namespace ProjetoDA
             refreshList();
         }
 
+        //Adiciona carta selecionada ao baralho selecionado.
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             if (listBoxBaralho.SelectedIndex >= 0)
@@ -50,6 +51,7 @@ namespace ProjetoDA
             }
         }
 
+        //Atualiza as listBoxs.
         private void refreshList()
         {
             listBoxCartas.Items.Clear();
@@ -59,6 +61,7 @@ namespace ProjetoDA
             listBoxBaralho.Items.AddRange(mcontainer.DeckSet.ToArray());
         }
 
+        //Remove as cartas selecionadas que estavam inseridas no respetivo baralho.
         private void buttonRemover_Click(object sender, EventArgs e)
         {
             if (listBoxBaralho.SelectedIndex >= 0) 
@@ -77,6 +80,7 @@ namespace ProjetoDA
             }
         }
 
+        //Atualiza a listBox que apresenta as cartas contidas no baralho.
         private void buttonSelect_Click(object sender, EventArgs e)
         {
             selectedDeck = (Deck)listBoxBaralho.SelectedItem;

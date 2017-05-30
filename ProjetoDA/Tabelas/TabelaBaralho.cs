@@ -23,6 +23,7 @@ namespace ProjetoDA
             refreshListaBaralho();
         }
 
+        //Cria um novo baralho.
         private void buttonInserirBaralho_Click(object sender, EventArgs e)
         {
             NovoBaralho = new Deck();
@@ -34,12 +35,14 @@ namespace ProjetoDA
             refreshListaBaralho();
         }
 
+        //Atualiza a lista de baralhos.
         private void refreshListaBaralho()
         {
             listBoxBaralho.Items.Clear();
             listBoxBaralho.Items.AddRange(container.DeckSet.ToArray());
         }
 
+        //Remove o baralhos selecionado.
         private void buttonRemover_Click(object sender, EventArgs e)
         {
             Deck BaralhoSelecionado = (Deck)listBoxBaralho.SelectedItem;
@@ -57,6 +60,7 @@ namespace ProjetoDA
             Deck BaralhoSelecionado = (Deck)listBoxBaralho.SelectedItem;
         }
 
+        //Edição de baralho.
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             Deck BaralhoSelecionado = (Deck)listBoxBaralho.SelectedItem;
@@ -95,6 +99,7 @@ namespace ProjetoDA
             return container.DeckSet.ToList();
         }
 
+        //Mostra vista para adicionar cartas ao baralho.
         private void buttonAdicionarCarta_Click(object sender, EventArgs e)
         {
             FormAddCartas newForm = new FormAddCartas();

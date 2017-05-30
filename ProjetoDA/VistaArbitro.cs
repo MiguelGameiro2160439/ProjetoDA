@@ -24,6 +24,7 @@ namespace ProjetoDA
             atualizarLista();
         }
 
+        //Guarda os dados alterados na base de dados.
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
             gameSelected.Number = (int)numericUpDownNum.Value;
@@ -37,12 +38,14 @@ namespace ProjetoDA
             limparCampos();
         }
 
+        //Atualiza a lista de jogos.
         private void atualizarLista()
         {
             listBoxJogos.Items.Clear();
             listBoxJogos.Items.AddRange(userSelecionado.Games.ToArray());
         }
 
+        //Limpa os campos.
         private void limparCampos()
         {
             gameSelected = null;
@@ -52,6 +55,7 @@ namespace ProjetoDA
             comboBoxBaralho2.SelectedItem = null;
         }
 
+        //Preenche as textBox com os dados do jogo selecionado.
         private void buttonSelect_Click(object sender, EventArgs e)
         {
             if (listBoxJogos.SelectedIndex >= 0)

@@ -27,6 +27,7 @@ namespace ProjetoDA
         {
             if (adminSelected == null)
             {
+                //Cria administrador se não estiver nenhum selecionado.
                 Administrator newAdmin = new Administrator();
                 newAdmin.Username = textBoxUsername.Text;
                 newAdmin.Password = textBoxPassword.Text;
@@ -39,6 +40,7 @@ namespace ProjetoDA
             }
             else
             {
+                //Edita administrador selecionado.
                 adminSelected.Username = textBoxUsername.Text;
                 adminSelected.Password = textBoxPassword.Text;
                 adminSelected.Email = textBoxEmail.Text;
@@ -51,6 +53,7 @@ namespace ProjetoDA
 
         private void atualizarLista()
         {
+            //Atualiza a listBox dos administradores.
             listBoxAdmins.Items.Clear();
             listBoxAdmins.Items.AddRange(mcontainer.UserSet.OfType<Administrator>().ToArray());
         }
@@ -59,6 +62,7 @@ namespace ProjetoDA
         {
             if (listBoxAdmins.SelectedIndex >= 0)
             {
+                //Apaga admin selecionado.
                 adminSelected = (Administrator)listBoxAdmins.SelectedItem;
                 mcontainer.UserSet.Remove(adminSelected);
                 limparCampos();
@@ -68,6 +72,7 @@ namespace ProjetoDA
 
         private void limparCampos()
         {
+            //Limpa campos.
             adminSelected = null;
             textBoxEmail.Text = "";
             textBoxUsername.Text = "";
@@ -78,6 +83,7 @@ namespace ProjetoDA
         {
             if (listBoxAdmins.SelectedIndex >= 0)
             {
+                //Preenche todos os campos com os dados do admin selecionado, para posterior edição.
                 adminSelected = (Administrator)listBoxAdmins.SelectedItem;
                 textBoxEmail.Text = adminSelected.Email;
                 textBoxUsername.Text = adminSelected.Username;

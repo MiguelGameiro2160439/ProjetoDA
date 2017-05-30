@@ -24,6 +24,7 @@ namespace ProjetoDA
 
         private void buttonNovo_Click(object sender, EventArgs e)
         {
+            //Cria jogador se não estiver nenhum selecionado.
             if (jogadorSelected == null)
             {
                 Player newPlayer = new Player();
@@ -38,6 +39,7 @@ namespace ProjetoDA
                 atualizarLista();
                 limparCampos();
             }
+            //Edita jogador selecionado.
             else
             {
                 jogadorSelected.Name = textBoxName.Text;
@@ -52,6 +54,7 @@ namespace ProjetoDA
             }
         }
 
+        //Apaga jogador selecionado.
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             if (listBoxPlayers.SelectedIndex >= 0)
@@ -63,6 +66,7 @@ namespace ProjetoDA
             }
         }
 
+        //Preenche todos os campos com os dados do jogador selecionado, para posterior edição.
         private void buttonEdit_Click(object sender, EventArgs e)
         {
             if (listBoxPlayers.SelectedIndex >= 0)
@@ -76,6 +80,7 @@ namespace ProjetoDA
             }
         }
 
+        //Abre um fileDialog para adquirir o URL da imagem.
         private void buttonProcurarAvatar_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
@@ -88,12 +93,14 @@ namespace ProjetoDA
             openFileDialog1 = null;
         }
 
+        //Atualiza a listBox dos jogadores.
         private void atualizarLista()
         {
             listBoxPlayers.Items.Clear();
             listBoxPlayers.Items.AddRange(mcontainer.PlayerSet.ToArray());
         }
 
+        //Limpa campos.
         private void limparCampos()
         {
             jogadorSelected = null;

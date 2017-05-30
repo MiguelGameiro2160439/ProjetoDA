@@ -28,6 +28,7 @@ namespace ProjetoDA
         {
             if (arbitroSelected == null)
             {
+                //Cria arbitro se não estiver nenhum selecionado.
                 Referee newArbitro = new Referee();
                 newArbitro.Name = textBoxName.Text;
                 newArbitro.Username = textBoxUsername.Text;
@@ -41,6 +42,7 @@ namespace ProjetoDA
             }
             else
             {
+                //Edita arbitro selecionado.
                 arbitroSelected.Name = textBoxName.Text;
                 arbitroSelected.Username = textBoxUsername.Text;
                 arbitroSelected.Password = textBoxPassword.Text;
@@ -54,7 +56,8 @@ namespace ProjetoDA
         }
 
         private void atualizarLista()
-        {
+        { 
+            //Atualiza a listBox dos arbitros.
             listBoxArbitros.Items.Clear();
             listBoxArbitros.Items.AddRange(mcontainer.UserSet.OfType<Referee>().ToArray());
         }
@@ -63,6 +66,7 @@ namespace ProjetoDA
         {
             if (listBoxArbitros.SelectedIndex >= 0)
             {
+                //Apaga arbitro selecionado.
                 arbitroSelected = (Referee)listBoxArbitros.SelectedItem;
                 mcontainer.UserSet.Remove(arbitroSelected);
                 limparCampos();
@@ -72,6 +76,7 @@ namespace ProjetoDA
 
         private void limparCampos()
         {
+            //Limpa campos.
             arbitroSelected = null;
             textBoxName.Text = "";
             textBoxUsername.Text = "";
@@ -83,6 +88,7 @@ namespace ProjetoDA
         {
             if (listBoxArbitros.SelectedIndex >= 0)
             {
+                //Preenche todos os campos com os dados do arbitro selecionado, para posterior edição.
                 arbitroSelected = (Referee)listBoxArbitros.SelectedItem;
                 textBoxName.Text = arbitroSelected.Name;
                 textBoxUsername.Text = arbitroSelected.Username;
@@ -93,6 +99,7 @@ namespace ProjetoDA
 
         private void buttonProcuraAvatar_Click(object sender, EventArgs e)
         {
+            //Abre um fileDialog para adquirir o URL da imagem.
             openFileDialog1.ShowDialog();
 
             if (openFileDialog1.CheckFileExists)
