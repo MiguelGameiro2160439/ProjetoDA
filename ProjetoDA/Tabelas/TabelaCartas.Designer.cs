@@ -32,6 +32,7 @@
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonAdicionarCarta = new System.Windows.Forms.Button();
             this.listBoxCartas = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonRemover
@@ -67,17 +68,27 @@
             // listBoxCartas
             // 
             this.listBoxCartas.FormattingEnabled = true;
-            this.listBoxCartas.Location = new System.Drawing.Point(12, 12);
+            this.listBoxCartas.Location = new System.Drawing.Point(12, 25);
             this.listBoxCartas.Name = "listBoxCartas";
-            this.listBoxCartas.Size = new System.Drawing.Size(422, 134);
+            this.listBoxCartas.Size = new System.Drawing.Size(422, 121);
             this.listBoxCartas.TabIndex = 8;
             this.listBoxCartas.SelectedIndexChanged += new System.EventHandler(this.listBoxCartas_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Cartas";
             // 
             // TabelaCartas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 208);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonRemover);
             this.Controls.Add(this.buttonEditar);
             this.Controls.Add(this.buttonAdicionarCarta);
@@ -86,6 +97,7 @@
             this.Text = "TabelaCartas";
             this.Load += new System.EventHandler(this.TabelaCartas_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button buttonEditar;
         private System.Windows.Forms.Button buttonAdicionarCarta;
         private System.Windows.Forms.ListBox listBoxCartas;
+        private System.Windows.Forms.Label label1;
     }
 }

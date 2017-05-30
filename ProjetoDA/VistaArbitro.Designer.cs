@@ -42,6 +42,7 @@
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
             this.listBoxJogos = new System.Windows.Forms.ListBox();
             this.buttonGuardar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNum)).BeginInit();
             this.SuspendLayout();
@@ -165,9 +166,9 @@
             // listBoxJogos
             // 
             this.listBoxJogos.FormattingEnabled = true;
-            this.listBoxJogos.Location = new System.Drawing.Point(12, 12);
+            this.listBoxJogos.Location = new System.Drawing.Point(12, 25);
             this.listBoxJogos.Name = "listBoxJogos";
-            this.listBoxJogos.Size = new System.Drawing.Size(166, 238);
+            this.listBoxJogos.Size = new System.Drawing.Size(166, 225);
             this.listBoxJogos.TabIndex = 30;
             // 
             // buttonGuardar
@@ -180,11 +181,21 @@
             this.buttonGuardar.UseVisualStyleBackColor = true;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 6);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Jogos";
+            // 
             // VistaArbitro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 259);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonSelect);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBoxJogos);
@@ -195,6 +206,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNum)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -214,5 +226,6 @@
         private System.Windows.Forms.TextBox textBoxDescricao;
         private System.Windows.Forms.ListBox listBoxJogos;
         private System.Windows.Forms.Button buttonGuardar;
+        private System.Windows.Forms.Label label6;
     }
 }

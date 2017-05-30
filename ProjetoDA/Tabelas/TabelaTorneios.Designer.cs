@@ -38,14 +38,16 @@
             this.buttonAdicionarNormal = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBoxTorneios
             // 
             this.listBoxTorneios.FormattingEnabled = true;
-            this.listBoxTorneios.Location = new System.Drawing.Point(12, 12);
+            this.listBoxTorneios.Location = new System.Drawing.Point(12, 25);
             this.listBoxTorneios.Name = "listBoxTorneios";
-            this.listBoxTorneios.Size = new System.Drawing.Size(153, 173);
+            this.listBoxTorneios.Size = new System.Drawing.Size(153, 160);
             this.listBoxTorneios.TabIndex = 0;
             this.listBoxTorneios.SelectedIndexChanged += new System.EventHandler(this.listBoxTorneios_SelectedIndexChanged);
             // 
@@ -82,9 +84,9 @@
             // listBoxTorneioNormal
             // 
             this.listBoxTorneioNormal.FormattingEnabled = true;
-            this.listBoxTorneioNormal.Location = new System.Drawing.Point(229, 12);
+            this.listBoxTorneioNormal.Location = new System.Drawing.Point(229, 25);
             this.listBoxTorneioNormal.Name = "listBoxTorneioNormal";
-            this.listBoxTorneioNormal.Size = new System.Drawing.Size(153, 173);
+            this.listBoxTorneioNormal.Size = new System.Drawing.Size(153, 160);
             this.listBoxTorneioNormal.TabIndex = 4;
             this.listBoxTorneioNormal.SelectedIndexChanged += new System.EventHandler(this.listBoxTorneioNormal_SelectedIndexChanged);
             // 
@@ -138,11 +140,31 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Torneios";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(229, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Torneio Normal";
+            // 
             // TabelaTorneios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(397, 290);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonAdicionarNormal);
@@ -156,6 +178,7 @@
             this.Name = "TabelaTorneios";
             this.Text = "TabelaTorneios";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -171,5 +194,7 @@
         private System.Windows.Forms.Button buttonAdicionarNormal;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
