@@ -34,13 +34,13 @@
             this.comboBoxBaralho1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.buttonGuardar = new System.Windows.Forms.Button();
             this.Label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDownNum = new System.Windows.Forms.NumericUpDown();
             this.dateTimePickerData = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
+            this.buttonGuardar = new System.Windows.Forms.Button();
             this.buttonSelect = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNum)).BeginInit();
@@ -49,11 +49,9 @@
             // listBoxJogos
             // 
             this.listBoxJogos.FormattingEnabled = true;
-            this.listBoxJogos.ItemHeight = 16;
-            this.listBoxJogos.Location = new System.Drawing.Point(13, 13);
-            this.listBoxJogos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxJogos.Location = new System.Drawing.Point(10, 11);
             this.listBoxJogos.Name = "listBoxJogos";
-            this.listBoxJogos.Size = new System.Drawing.Size(220, 292);
+            this.listBoxJogos.Size = new System.Drawing.Size(166, 238);
             this.listBoxJogos.TabIndex = 1;
             // 
             // groupBox1
@@ -68,9 +66,11 @@
             this.groupBox1.Controls.Add(this.dateTimePickerData);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxDescricao);
-            this.groupBox1.Location = new System.Drawing.Point(244, 12);
+            this.groupBox1.Location = new System.Drawing.Point(183, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(340, 222);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(255, 180);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Jogo";
@@ -78,113 +78,103 @@
             // comboBoxBaralho2
             // 
             this.comboBoxBaralho2.FormattingEnabled = true;
-            this.comboBoxBaralho2.Location = new System.Drawing.Point(178, 181);
-            this.comboBoxBaralho2.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxBaralho2.Location = new System.Drawing.Point(134, 147);
             this.comboBoxBaralho2.Name = "comboBoxBaralho2";
-            this.comboBoxBaralho2.Size = new System.Drawing.Size(145, 24);
+            this.comboBoxBaralho2.Size = new System.Drawing.Size(110, 21);
             this.comboBoxBaralho2.TabIndex = 32;
             // 
             // comboBoxBaralho1
             // 
             this.comboBoxBaralho1.FormattingEnabled = true;
-            this.comboBoxBaralho1.Location = new System.Drawing.Point(5, 181);
-            this.comboBoxBaralho1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxBaralho1.Location = new System.Drawing.Point(4, 147);
             this.comboBoxBaralho1.Name = "comboBoxBaralho1";
-            this.comboBoxBaralho1.Size = new System.Drawing.Size(145, 24);
+            this.comboBoxBaralho1.Size = new System.Drawing.Size(110, 21);
             this.comboBoxBaralho1.TabIndex = 31;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(177, 160);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(133, 130);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 17);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 30;
-            this.label5.Text = "Baralho da Baralho  2";
+            this.label5.Text = "Baralho  2";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 160);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(3, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 17);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 29;
-            this.label4.Text = "Baralho da Baralho 1";
-            // 
-            // buttonGuardar
-            // 
-            this.buttonGuardar.Location = new System.Drawing.Point(467, 263);
-            this.buttonGuardar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(100, 28);
-            this.buttonGuardar.TabIndex = 28;
-            this.buttonGuardar.Text = "Guardar";
-            this.buttonGuardar.UseVisualStyleBackColor = true;
-            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
+            this.label4.Text = "Baralho 1";
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(4, 90);
-            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label3.Location = new System.Drawing.Point(3, 73);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(38, 17);
+            this.Label3.Size = new System.Drawing.Size(30, 13);
             this.Label3.TabIndex = 27;
             this.Label3.Text = "Data";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 34);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(5, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 17);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 26;
             this.label2.Text = "Número";
             // 
             // numericUpDownNum
             // 
-            this.numericUpDownNum.Location = new System.Drawing.Point(7, 55);
-            this.numericUpDownNum.Margin = new System.Windows.Forms.Padding(4);
+            this.numericUpDownNum.Location = new System.Drawing.Point(5, 45);
             this.numericUpDownNum.Name = "numericUpDownNum";
-            this.numericUpDownNum.Size = new System.Drawing.Size(65, 22);
+            this.numericUpDownNum.Size = new System.Drawing.Size(49, 20);
             this.numericUpDownNum.TabIndex = 25;
             // 
             // dateTimePickerData
             // 
             this.dateTimePickerData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerData.Location = new System.Drawing.Point(7, 111);
-            this.dateTimePickerData.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerData.Location = new System.Drawing.Point(5, 90);
             this.dateTimePickerData.Name = "dateTimePickerData";
-            this.dateTimePickerData.Size = new System.Drawing.Size(115, 22);
+            this.dateTimePickerData.Size = new System.Drawing.Size(87, 20);
             this.dateTimePickerData.TabIndex = 24;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(143, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(107, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 23;
             this.label1.Text = "Descrição";
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(141, 39);
-            this.textBoxDescricao.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDescricao.Location = new System.Drawing.Point(106, 32);
             this.textBoxDescricao.Multiline = true;
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(192, 104);
+            this.textBoxDescricao.Size = new System.Drawing.Size(145, 85);
             this.textBoxDescricao.TabIndex = 22;
+            // 
+            // buttonGuardar
+            // 
+            this.buttonGuardar.Location = new System.Drawing.Point(350, 214);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(75, 23);
+            this.buttonGuardar.TabIndex = 28;
+            this.buttonGuardar.Text = "Guardar";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // buttonSelect
             // 
-            this.buttonSelect.Location = new System.Drawing.Point(294, 263);
+            this.buttonSelect.Location = new System.Drawing.Point(220, 214);
+            this.buttonSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(100, 28);
+            this.buttonSelect.Size = new System.Drawing.Size(75, 23);
             this.buttonSelect.TabIndex = 29;
             this.buttonSelect.Text = "Select";
             this.buttonSelect.UseVisualStyleBackColor = true;
@@ -192,14 +182,13 @@
             // 
             // VistaArbitro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 321);
+            this.ClientSize = new System.Drawing.Size(447, 261);
             this.Controls.Add(this.buttonSelect);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBoxJogos);
             this.Controls.Add(this.buttonGuardar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "VistaArbitro";
             this.Text = "VistaArbitro";
             this.groupBox1.ResumeLayout(false);
