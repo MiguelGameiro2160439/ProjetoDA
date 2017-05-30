@@ -16,11 +16,13 @@ namespace ProjetoDA
     {
         private Model1Container container;
         private Card cartaSelecionada;
-        private Card cartas;
+        private List<Card> cartas;
 
         public TabelaCartas()
         {
             InitializeComponent();
+
+            cartas = new List<Card>();
 
             container = new Model1Container();
 
@@ -114,7 +116,7 @@ namespace ProjetoDA
                     try
                     {
                         BinaryFormatter formatter = new BinaryFormatter();
-                        cartas = (Card)formatter.Deserialize(stream);
+                        cartas = (List<Card>)formatter.Deserialize(stream);
 
                         textoMsgBox = String.Format("Dados das cartas carregados. {0} cartas lidas.");
                         tituloMsgBox = "Dados Lidos";
