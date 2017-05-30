@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,10 +16,12 @@ namespace ProjetoDA
     {
         private Model1Container container;
         private Card cartaSelecionada;
+        private List<Card> cartas;
 
         public TabelaCartas()
         {
             InitializeComponent();
+            cartas = new List<Card>();
 
             container = new Model1Container();
 
@@ -99,12 +103,65 @@ namespace ProjetoDA
             
         }
 
-      
-
-
-        private void TabelaCartas_Load(object sender, EventArgs e)
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string textoMsgBox = "Operação cancelada.";
+            string tituloMsgBox = "Cancelado";
 
+            if (openFileDialogCartas.ShowDialog() == DialogResult.OK)
+            {
+                using (Stream stream = File.Open(openFileDialogCartas.FileName, FileMode.Open))
+                {
+                    try
+                    {
+                        BinaryFormatter formatter = new BinaryFormatter();
+                        cartas = (List<Card>)formatter.Deserialize(stream);
+
+                        textoMsgBox = String.Format("Dados das cartas carregados. {0} cartas lidas.", cartas.Count);
+                        tituloMsgBox = "Dados Lidos";
+                       
+
+                        refreshListaCards();
+                    }
+                    catch (InvalidCastException ex)
+                    {
+                        textoMsgBox = "Não foi possível converter os dados guadados no ficheiro. O ficheiro não contém uma versão correta das classes." + ex.Message;
+                        tituloMsgBox = "Erro de Leitura";
+                    }
+                }
+            }
+
+            MessageBox.Show(textoMsgBox, tituloMsgBox, MessageBoxButtons.OK);
+        }
+
+        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string textoMsgBox = "Operação cancelada.";
+            string tituloMsgBox = "Cancelado";
+
+            if (saveFileDialogCartas.ShowDialog() == DialogResult.OK)
+            {
+                using (Stream stream = File.Open(saveFileDialogCartas.FileName, FileMode.Create))
+                {
+                    BinaryFormatter formatter = new BinaryFormatter();
+
+                    try
+                    {
+                        formatter.Serialize(stream, cartas);
+                        stream.Flush();                        
+
+                        textoMsgBox = "Dados guardados com sucesso!";
+                        tituloMsgBox = "Dados Guardados";
+                    }
+                    catch (Exception ex)
+                    {
+                        textoMsgBox = "Não foi possível guardar os dados no ficheiro indicado. " + ex.Message;
+                        tituloMsgBox = "Erro de Escrita";
+                    }
+                }
+            }
+
+            MessageBox.Show(textoMsgBox, tituloMsgBox, MessageBoxButtons.OK);
         }
     }
 }
