@@ -112,6 +112,12 @@
     <Compile Include="FormAddJogadores.Designer.cs">
       <DependentUpon>FormAddJogadores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddJogadoresEquipa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddJogadoresEquipa.Designer.cs">
+      <DependentUpon>FormAddJogadoresEquipa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FormTorneioNormal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,10 +267,10 @@
     <Compile Include="Admin\VistaAdmin.Designer.cs">
       <DependentUpon>VistaAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Arbitro\VistaArbitro.cs">
+    <Compile Include="VistaArbitro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Arbitro\VistaArbitro.Designer.cs">
+    <Compile Include="VistaArbitro.Designer.cs">
       <DependentUpon>VistaArbitro.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin\EditAdmin.resx">
@@ -284,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAddJogadores.resx">
       <DependentUpon>FormAddJogadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddJogadoresEquipa.resx">
+      <DependentUpon>FormAddJogadoresEquipa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormTorneioNormal.resx">
       <DependentUpon>FormTorneioNormal.cs</DependentUpon>
@@ -342,7 +351,7 @@
     <EmbeddedResource Include="Tabelas\TabelaTorneios.resx">
       <DependentUpon>TabelaTorneios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Arbitro\VistaArbitro.resx">
+    <EmbeddedResource Include="VistaArbitro.resx">
       <DependentUpon>VistaArbitro.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
